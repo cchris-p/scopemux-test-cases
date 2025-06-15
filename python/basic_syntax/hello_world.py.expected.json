@@ -1,19 +1,48 @@
 {
   "language": "Python",
   "ast": {
-    "type": "module",
-    "functions": [
+    "type": "ROOT",
+    "name": "ROOT",
+    "qualified_name": "hello_world.py",
+    "children": [
       {
-        "name": "main",
-        "type": "function_definition",
-        "parameters": [],
-        "body_range": {
-          "start_line": 9,
+        "type": "DOCSTRING",
+        "name": "module_docstring",
+        "qualified_name": "hello_world.py.module_docstring",
+        "docstring": "A simple \"Hello, World!\" program in Python\n\nThis example demonstrates basic Python syntax including:\n- Comments and docstrings\n- Function definitions\n- Print statements\n- Conditional execution",
+        "range": {
+          "start_line": 2,
           "start_column": 0,
-          "end_line": 13,
-          "end_column": 4
+          "end_line": 9,
+          "end_column": 3
         },
-        "docstring": "Program entry point"
+        "raw_content": "\"\"\"\nA simple \"Hello, World!\" program in Python\n\nThis example demonstrates basic Python syntax including:\n- Comments and docstrings\n- Function definitions\n- Print statements\n- Conditional execution\n\"\"\""
+      },
+      {
+        "type": "FUNCTION",
+        "name": "main",
+        "qualified_name": "hello_world.py.main",
+        "signature": "def main()",
+        "docstring": "Program entry point",
+        "range": {
+          "start_line": 12,
+          "start_column": 0,
+          "end_line": 17,
+          "end_column": 24
+        },
+        "raw_content": "def main():\n    \"\"\"\n    Program entry point\n    \"\"\"\n    print(\"Hello, World!\")"
+      },
+      {
+        "type": "CONTROL_FLOW",
+        "name": "if_statement",
+        "qualified_name": "hello_world.py.if_statement",
+        "range": {
+          "start_line": 20,
+          "start_column": 0,
+          "end_line": 21,
+          "end_column": 10
+        },
+        "raw_content": "if __name__ == \"__main__\":\n    main()"
       }
     ],
     "comments": [
@@ -23,48 +52,18 @@
         "line": 16
       }
     ],
-    "docstrings": [
-      {
-        "type": "module_docstring",
-        "text": "A simple \"Hello, World!\" program in Python\n\nThis example demonstrates basic Python syntax including:\n- Comments and docstrings\n- Function definitions\n- Print statements\n- Conditional execution",
-        "range": {
-          "start_line": 1,
-          "start_column": 0,
-          "end_line": 8,
-          "end_column": 3
-        }
-      },
-      {
-        "type": "function_docstring",
-        "text": "Program entry point",
-        "function": "main",
-        "range": {
-          "start_line": 10,
-          "start_column": 4,
-          "end_line": 12,
-          "end_column": 7
-        }
-      }
-    ],
     "function_calls": [
       {
         "name": "print",
         "arguments": [
           "\"Hello, World!\""
         ],
-        "line": 12
+        "line": 17
       },
       {
         "name": "main",
         "arguments": [],
-        "line": 17
-      }
-    ],
-    "conditionals": [
-      {
-        "type": "if_statement",
-        "test": "__name__ == \"__main__\"",
-        "line": 15
+        "line": 21
       }
     ]
   }

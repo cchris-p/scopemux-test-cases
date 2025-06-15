@@ -1,189 +1,238 @@
 {
   "language": "Python",
   "ast": {
-    "type": "module",
-    "functions": [
+    "type": "ROOT",
+    "name": "ROOT",
+    "qualified_name": "variables_loops_conditions.py",
+    "children": [
       {
-        "name": "main",
-        "type": "function_definition",
-        "parameters": [],
-        "return_type": "None",
-        "body_range": {
-          "start_line": 11,
-          "start_column": 0,
-          "end_line": 80,
-          "end_column": 4
-        },
-        "docstring": "Program entry point"
-      }
-    ],
-    "imports": [
-      {
-        "name": "typing",
-        "symbols": ["List", "Dict", "Set", "Tuple", "Optional"],
-        "line": 10
-      }
-    ],
-    "docstrings": [
-      {
-        "type": "module_docstring",
-        "text": "Demonstration of variables, loops, and conditional statements in Python\n\nThis example shows:\n- Various variable declarations and types\n- for and while loops\n- if, elif, else conditions\n- List, dictionary, and set comprehensions\n- Type hints (Python 3.5+)",
+        "type": "DOCSTRING",
+        "name": "module_docstring",
+        "qualified_name": "variables_loops_conditions.py.module_docstring",
+        "docstring": "Demonstration of variables, loops, and conditional statements in Python\n\nThis example shows:\n- Various variable declarations and types\n- for and while loops\n- if, elif, else conditions\n- List, dictionary, and set comprehensions\n- Type hints (Python 3.5+)",
         "range": {
-          "start_line": 1,
+          "start_line": 2,
           "start_column": 0,
-          "end_line": 9,
+          "end_line": 11,
           "end_column": 3
-        }
+        },
+        "raw_content": "\"\"\"\nDemonstration of variables, loops, and conditional statements in Python\n\nThis example shows:\n- Various variable declarations and types\n- for and while loops\n- if, elif, else conditions\n- List, dictionary, and set comprehensions\n- Type hints (Python 3.5+)\n\"\"\""
       },
       {
-        "type": "function_docstring",
-        "text": "Program entry point",
-        "function": "main",
+        "type": "IMPORT",
+        "name": "typing_import",
+        "qualified_name": "variables_loops_conditions.py.typing_import",
         "range": {
-          "start_line": 12,
-          "start_column": 4,
-          "end_line": 14,
-          "end_column": 7
-        }
-      }
-    ],
-    "variable_declarations": [
-      {
-        "name": "i",
-        "type": "int",
-        "line": 16,
-        "initialized": true
+          "start_line": 13,
+          "start_column": 0,
+          "end_line": 13,
+          "end_column": 54
+        },
+        "raw_content": "from typing import List, Dict, Set, Tuple, Optional",
+        "symbols": ["List", "Dict", "Set", "Tuple", "Optional"]
       },
       {
-        "name": "f",
-        "type": "float",
-        "line": 17,
-        "initialized": true
-      },
-      {
-        "name": "s",
-        "type": "str",
-        "line": 18,
-        "initialized": true
-      },
-      {
-        "name": "b",
-        "type": "bool",
-        "line": 19,
-        "initialized": true
-      },
-      {
-        "name": "my_list",
-        "type": "List[int]",
-        "line": 22,
-        "initialized": true
-      },
-      {
-        "name": "my_dict",
-        "type": "Dict[str, int]",
-        "line": 23,
-        "initialized": true
-      },
-      {
-        "name": "my_set",
-        "type": "Set[int]",
-        "line": 24,
-        "initialized": true
-      },
-      {
-        "name": "my_tuple",
-        "type": "Tuple[int, str, float]",
-        "line": 25,
-        "initialized": true
-      },
-      {
-        "name": "squares",
-        "line": 73,
-        "initialized": true
-      },
-      {
-        "name": "char_count",
-        "line": 78,
-        "initialized": true
-      }
-    ],
-    "loops": [
-      {
-        "type": "for_statement",
+        "type": "FUNCTION",
+        "name": "main",
+        "qualified_name": "variables_loops_conditions.py.main",
+        "signature": "def main() -> None",
+        "docstring": "Program entry point",
+        "return_type": "None",
         "range": {
-          "start_line": 29,
-          "start_column": 4,
-          "end_line": 30,
-          "end_column": 24
-        }
-      },
-      {
-        "type": "for_statement",
-        "range": {
-          "start_line": 34,
-          "start_column": 4,
-          "end_line": 35,
-          "end_column": 27
-        }
-      },
-      {
-        "type": "for_statement",
-        "range": {
-          "start_line": 39,
-          "start_column": 4,
-          "end_line": 40,
-          "end_column": 47
-        }
-      },
-      {
-        "type": "for_statement",
-        "range": {
-          "start_line": 44,
-          "start_column": 4,
-          "end_line": 45,
-          "end_column": 45
-        }
-      },
-      {
-        "type": "while_statement",
-        "range": {
-          "start_line": 50,
-          "start_column": 4,
-          "end_line": 52,
-          "end_column": 12
-        }
-      }
-    ],
-    "conditionals": [
-      {
-        "type": "if_statement",
-        "range": {
-          "start_line": 56,
-          "start_column": 4,
-          "end_line": 59,
-          "end_column": 25
-        }
-      },
-      {
-        "type": "if_statement",
-        "range": {
-          "start_line": 63,
-          "start_column": 4,
-          "end_line": 68,
-          "end_column": 33
-        }
-      }
-    ],
-    "comprehensions": [
-      {
-        "type": "list_comprehension",
-        "line": 73,
-        "expression": "[x**2 for x in range(10) if x % 2 == 0]"
-      },
-      {
-        "type": "dict_comprehension",
-        "line": 78,
-        "expression": "{char: s.count(char) for char in set(s) if char.isalpha()}"
+          "start_line": 16,
+          "start_column": 0,
+          "end_line": 98,
+          "end_column": 0
+        },
+        "raw_content": "def main() -> None:\n    \"\"\"\n    Program entry point\n    \"\"\"\n    # Variable declarations with type hints\n    i: int = 0\n    f: float = 3.14\n    s: str = \"Hello, Python\"\n    b: bool = True\n\n    # Collection types\n    my_list: List[int] = [1, 2, 3, 4, 5]\n    my_dict: Dict[str, int] = {\"one\": 1, \"two\": 2, \"three\": 3}\n    my_set: Set[int] = {10, 20, 30, 40, 50}\n    my_tuple: Tuple[int, str, float] = (1, \"two\", 3.0)\n\n    # For loop with a list\n    print(\"For loop with list example:\")\n    for value in my_list:\n        print(f\"value: {value}\")\n\n    # For loop with range\n    print(\"\\nFor loop with range example:\")\n    for i in range(5):\n        print(f\"iteration: {i}\")\n\n    # For loop with enumeration\n    print(\"\\nFor loop with enumeration example:\")\n    for index, value in enumerate(my_list):\n        print(f\"index: {index}, value: {value}\")\n\n    # For loop with dictionary\n    print(\"\\nFor loop with dictionary example:\")\n    for key, value in my_dict.items():\n        print(f\"key: {key}, value: {value}\")\n\n    # While loop\n    print(\"\\nWhile loop example:\")\n    i = 0\n    while i < 5:\n        print(f\"iteration: {i}\")\n        i += 1\n\n    # If-else statements\n    print(\"\\nIf-else example:\")\n    if b:\n        print(\"b is True\")\n    else:\n        print(\"b is False\")\n\n    # If-elif-else\n    print(\"\\nIf-elif-else example:\")\n    if i < 3:\n        print(\"i is less than 3\")\n    elif i == 5:\n        print(\"i is equal to 5\")\n    else:\n        print(\"i is greater than 5\")\n\n    # List comprehension\n    print(\"\\nList comprehension example:\")\n    squares = [x**2 for x in range(10) if x % 2 == 0]\n    print(f\"Squares of even numbers from 0-9: {squares}\")\n\n    # Dictionary comprehension\n    print(\"\\nDictionary comprehension example:\")\n    word_lengths = {word: len(word) for word in [\"hello\", \"python\", \"world\", \"programming\"]}\n    print(f\"Word lengths: {word_lengths}\")\n\n    # Set comprehension\n    print(\"\\nSet comprehension example:\")\n    odd_squares = {x**2 for x in range(10) if x % 2 == 1}\n    print(f\"Squares of odd numbers from 0-9: {odd_squares}\")\n",
+        "variables": [
+
+                {
+            "name": "i",
+            "type": "int",
+            "line": 21,
+            "initialized": true
+          },
+          {
+            "name": "f",
+            "type": "float",
+            "line": 22,
+            "initialized": true
+          },
+          {
+            "name": "s",
+            "type": "str",
+            "line": 23,
+            "initialized": true
+          },
+          {
+            "name": "b",
+            "type": "bool",
+            "line": 24,
+            "initialized": true
+          },
+          {
+            "name": "my_list",
+            "type": "List[int]",
+            "line": 27,
+            "initialized": true
+          },
+          {
+            "name": "my_dict",
+            "type": "Dict[str, int]",
+            "line": 28,
+            "initialized": true
+          },
+          {
+            "name": "my_set",
+            "type": "Set[int]",
+            "line": 29,
+            "initialized": true
+          },
+          {
+            "name": "my_tuple",
+            "type": "Tuple[int, str, float]",
+            "line": 30,
+            "initialized": true
+          },
+          {
+            "name": "squares",
+            "line": 77,
+            "initialized": true
+          },
+          {
+            "name": "word_lengths",
+            "line": 83,
+            "initialized": true
+          },
+          {
+            "name": "odd_squares",
+            "line": 89,
+            "initialized": true
+          }
+        ],
+        "control_flow": [
+          {
+            "type": "FOR_LOOP",
+            "name": "for_loop_list",
+            "qualified_name": "variables_loops_conditions.py.main.for_loop_list",
+            "range": {
+              "start_line": 34,
+              "start_column": 4,
+              "end_line": 35,
+              "end_column": 30
+            },
+            "raw_content": "for value in my_list:\n        print(f\"value: {value}\")"
+          },
+          {
+            "type": "FOR_LOOP",
+            "name": "for_loop_range",
+            "qualified_name": "variables_loops_conditions.py.main.for_loop_range",
+            "range": {
+              "start_line": 39,
+              "start_column": 4,
+              "end_line": 40,
+              "end_column": 33
+            },
+            "raw_content": "for i in range(5):\n        print(f\"iteration: {i}\")"
+          },
+          {
+            "type": "FOR_LOOP",
+            "name": "for_loop_enumeration",
+            "qualified_name": "variables_loops_conditions.py.main.for_loop_enumeration",
+            "range": {
+              "start_line": 44,
+              "start_column": 4,
+              "end_line": 45,
+              "end_column": 53
+            },
+            "raw_content": "for index, value in enumerate(my_list):\n        print(f\"index: {index}, value: {value}\")"
+          },
+          {
+            "type": "FOR_LOOP",
+            "name": "for_loop_dictionary",
+            "qualified_name": "variables_loops_conditions.py.main.for_loop_dictionary",
+            "range": {
+              "start_line": 49,
+              "start_column": 4,
+              "end_line": 50,
+              "end_column": 51
+            },
+            "raw_content": "for key, value in my_dict.items():\n        print(f\"key: {key}, value: {value}\")"
+          },
+          {
+            "type": "WHILE_LOOP",
+            "name": "while_loop",
+            "qualified_name": "variables_loops_conditions.py.main.while_loop",
+            "range": {
+              "start_line": 55,
+              "start_column": 4,
+              "end_line": 57,
+              "end_column": 15
+            },
+            "raw_content": "while i < 5:\n        print(f\"iteration: {i}\")\n        i += 1"
+          },
+          {
+            "type": "CONDITIONAL",
+            "name": "if_else_statement",
+            "qualified_name": "variables_loops_conditions.py.main.if_else_statement",
+            "range": {
+              "start_line": 61,
+              "start_column": 4,
+              "end_line": 64,
+              "end_column": 26
+            },
+            "raw_content": "if b:\n        print(\"b is True\")\n    else:\n        print(\"b is False\")"
+          },
+          {
+            "type": "CONDITIONAL",
+            "name": "if_elif_else_statement",
+            "qualified_name": "variables_loops_conditions.py.main.if_elif_else_statement",
+            "range": {
+              "start_line": 68,
+              "start_column": 4,
+              "end_line": 73,
+              "end_column": 35
+            },
+            "raw_content": "if i < 3:\n        print(\"i is less than 3\")\n    elif i == 5:\n        print(\"i is equal to 5\")\n    else:\n        print(\"i is greater than 5\")"
+          },
+          {
+            "type": "LIST_COMPREHENSION",
+            "name": "list_comprehension",
+            "qualified_name": "variables_loops_conditions.py.main.list_comprehension",
+            "range": {
+              "start_line": 77,
+              "start_column": 13,
+              "end_line": 77,
+              "end_column": 54
+            },
+            "raw_content": "[x**2 for x in range(10) if x % 2 == 0]"
+          },
+          {
+            "type": "DICTIONARY_COMPREHENSION",
+            "name": "dict_comprehension",
+            "qualified_name": "variables_loops_conditions.py.main.dict_comprehension",
+            "range": {
+              "start_line": 83,
+              "start_column": 17,
+              "end_line": 83,
+              "end_column": 84
+            },
+            "raw_content": "{word: len(word) for word in [\"hello\", \"python\", \"world\", \"programming\"]}"
+          },
+          {
+            "type": "SET_COMPREHENSION",
+            "name": "set_comprehension",
+            "qualified_name": "variables_loops_conditions.py.main.set_comprehension",
+            "range": {
+              "start_line": 89,
+              "start_column": 16,
+              "end_line": 89,
+              "end_column": 54
+            },
+            "raw_content": "{x**2 for x in range(10) if x % 2 == 1}"
+          }
+        ]
       }
     ],
     "function_calls": [
@@ -192,185 +241,140 @@
         "arguments": [
           "\"For loop with list example:\""
         ],
-        "line": 28
+        "line": 33
       },
       {
         "name": "print",
         "arguments": [
           "f\"value: {value}\""
         ],
-        "line": 30
+        "line": 35
       },
       {
         "name": "print",
         "arguments": [
           "\"\\nFor loop with range example:\""
         ],
-        "line": 33
-      },
-      {
-        "name": "range",
-        "arguments": [
-          "5"
-        ],
-        "line": 34
+        "line": 38
       },
       {
         "name": "print",
         "arguments": [
           "f\"iteration: {i}\""
-        ],
-        "line": 35
-      },
-      {
-        "name": "print",
-        "arguments": [
-          "\"\\nFor loop with enumeration example:\""
-        ],
-        "line": 38
-      },
-      {
-        "name": "enumerate",
-        "arguments": [
-          "my_list"
-        ],
-        "line": 39
-      },
-      {
-        "name": "print",
-        "arguments": [
-          "f\"index: {index}, value: {value}\""
         ],
         "line": 40
       },
       {
         "name": "print",
         "arguments": [
-          "\"\\nFor loop with dictionary example:\""
+          "\"\\nFor loop with enumeration example:\""
         ],
         "line": 43
       },
       {
-        "name": "my_dict.items",
-        "arguments": [],
-        "line": 44
-      },
-      {
         "name": "print",
         "arguments": [
-          "f\"key: {key}, value: {value}\""
+          "f\"index: {index}, value: {value}\""
         ],
         "line": 45
       },
       {
         "name": "print",
         "arguments": [
-          "\"\\nWhile loop example:\""
+          "\"\\nFor loop with dictionary example:\""
         ],
         "line": 48
       },
       {
         "name": "print",
         "arguments": [
+          "f\"key: {key}, value: {value}\""
+        ],
+        "line": 50
+      },
+      {
+        "name": "print",
+        "arguments": [
+          "\"\\nWhile loop example:\""
+        ],
+        "line": 53
+      },
+      {
+        "name": "print",
+        "arguments": [
           "f\"iteration: {i}\""
         ],
-        "line": 51
+        "line": 56
       },
       {
         "name": "print",
         "arguments": [
           "\"\\nIf-else example:\""
         ],
-        "line": 55
+        "line": 60
       },
       {
         "name": "print",
         "arguments": [
           "\"b is True\""
         ],
-        "line": 57
+        "line": 62
       },
       {
         "name": "print",
         "arguments": [
           "\"b is False\""
         ],
-        "line": 59
+        "line": 64
       },
       {
         "name": "print",
         "arguments": [
           "\"\\nIf-elif-else example:\""
         ],
-        "line": 62
+        "line": 67
       },
       {
         "name": "print",
         "arguments": [
           "\"i is less than 3\""
         ],
-        "line": 64
+        "line": 69
       },
       {
         "name": "print",
         "arguments": [
           "\"i is equal to 5\""
         ],
-        "line": 66
+        "line": 71
       },
       {
         "name": "print",
         "arguments": [
           "\"i is greater than 5\""
         ],
-        "line": 68
+        "line": 73
       },
       {
         "name": "print",
         "arguments": [
           "\"\\nList comprehension example:\""
         ],
-        "line": 71
-      },
-      {
-        "name": "range",
-        "arguments": [
-          "10"
-        ],
-        "line": 73
+        "line": 76
       },
       {
         "name": "print",
         "arguments": [
           "f\"Squares of even numbers from 0-9: {squares}\""
         ],
-        "line": 74
+        "line": 78
       },
       {
         "name": "print",
         "arguments": [
           "\"\\nDictionary comprehension example:\""
         ],
-        "line": 77
-      },
-      {
-        "name": "set",
-        "arguments": [
-          "s"
-        ],
-        "line": 78
-      },
-      {
-        "name": "s.count",
-        "arguments": [
-          "char"
-        ],
-        "line": 78
-      },
-      {
-        "name": "char.isalpha",
-        "arguments": [],
-        "line": 78
+        "line": 81
       },
       {
         "name": "print",

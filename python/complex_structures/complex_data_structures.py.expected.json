@@ -1,49 +1,163 @@
 {
   "language": "Python",
   "ast": {
-    "type": "module",
-    "classes": [
+    "type": "ROOT",
+    "name": "ROOT",
+    "qualified_name": "complex_data_structures.py",
+    "children": [
       {
-        "name": "Rectangle",
-        "type": "class_definition",
-        "decorators": ["dataclass"],
-        "methods": [
-          {
-            "name": "area",
-            "type": "method",
-            "parameters": ["self"],
-            "return_type": "float",
-            "body_range": {
-              "start_line": 26,
-              "start_column": 4,
-              "end_line": 30,
-              "end_column": 20
-            },
-            "docstring": "Calculate the area of the rectangle"
-          },
-          {
-            "name": "__str__",
-            "type": "method",
-            "parameters": ["self"],
-            "return_type": "str",
-            "body_range": {
-              "start_line": 32,
-              "start_column": 4,
-              "end_line": 33,
-              "end_column": 69
-            }
-          }
-        ],
-        "fields": [
-          {"name": "top_left", "type": "Point", "line": 24},
-          {"name": "bottom_right", "type": "Point", "line": 25}
-        ],
+        "type": "DOCSTRING",
+        "name": "module_docstring",
+        "qualified_name": "complex_data_structures.py.module_docstring",
+        "docstring": "Demonstration of complex data structures in Python\n\nThis example shows:\n- Built-in container types (list, dict, set, tuple)\n- Nested data structures\n- Custom classes with special methods\n- Collections module specialized containers\n- Type annotations for complex structures",
         "range": {
-          "start_line": 19,
+          "start_line": 2,
           "start_column": 0,
-          "end_line": 33,
+          "end_line": 11,
+          "end_column": 3
+        },
+        "raw_content": "\"\"\"\nDemonstration of complex data structures in Python\n\nThis example shows:\n- Built-in container types (list, dict, set, tuple)\n- Nested data structures\n- Custom classes with special methods\n- Collections module specialized containers\n- Type annotations for complex structures\n\"\"\""
+      },
+      {
+        "type": "IMPORT",
+        "name": "typing_import",
+        "qualified_name": "complex_data_structures.py.typing_import",
+        "range": {
+          "start_line": 13,
+          "start_column": 0,
+          "end_line": 13,
+          "end_column": 68
+        },
+        "raw_content": "from typing import List, Dict, Set, Tuple, Optional, Union, Any",
+        "symbols": ["List", "Dict", "Set", "Tuple", "Optional", "Union", "Any"]
+      },
+      {
+        "type": "IMPORT",
+        "name": "collections_import",
+        "qualified_name": "complex_data_structures.py.collections_import",
+        "range": {
+          "start_line": 14,
+          "start_column": 0,
+          "end_line": 14,
+          "end_column": 59
+        },
+        "raw_content": "from collections import defaultdict, Counter, deque, namedtuple",
+        "symbols": ["defaultdict", "Counter", "deque", "namedtuple"]
+      },
+      {
+        "type": "IMPORT",
+        "name": "dataclasses_import",
+        "qualified_name": "complex_data_structures.py.dataclasses_import",
+        "range": {
+          "start_line": 15,
+          "start_column": 0,
+          "end_line": 15,
+          "end_column": 31
+        },
+        "raw_content": "from dataclasses import dataclass",
+        "symbols": ["dataclass"]
+      },
+      {
+        "type": "IMPORT",
+        "name": "json_import",
+        "qualified_name": "complex_data_structures.py.json_import",
+        "range": {
+          "start_line": 16,
+          "start_column": 0,
+          "end_line": 16,
+          "end_column": 11
+        },
+        "raw_content": "import json",
+        "symbols": ["json"]
+      },
+      {
+        "type": "VARIABLE",
+        "name": "Point",
+        "qualified_name": "complex_data_structures.py.Point",
+        "range": {
+          "start_line": 20,
+          "start_column": 0,
+          "end_line": 20,
+          "end_column": 36
+        },
+        "raw_content": "Point = namedtuple(\"Point\", [\"x\", \"y\"])"
+      },
+      {
+        "type": "CLASS",
+        "name": "Rectangle",
+        "qualified_name": "complex_data_structures.py.Rectangle",
+        "decorators": ["dataclass"],
+        "docstring": "A rectangle defined by its top-left and bottom-right corners",
+        "range": {
+          "start_line": 24,
+          "start_column": 0,
+          "end_line": 40,
           "end_column": 69
         },
+        "raw_content": "@dataclass\nclass Rectangle:\n    \"\"\"\n    A rectangle defined by its top-left and bottom-right corners\n    \"\"\"\n\n    top_left: Point\n    bottom_right: Point\n\n    def area(self) -> float:\n        \"\"\"Calculate the area of the rectangle\"\"\"\n        width = self.bottom_right.x - self.top_left.x\n        height = self.bottom_right.y - self.top_left.y\n        return width * height\n\n    def __str__(self) -> str:\n        return f\"Rectangle({self.top_left} to {self.bottom_right})\"\n",
+        "children": [
+          {
+            "type": "CLASS_FIELD", 
+            "name": "top_left", 
+            "qualified_name": "complex_data_structures.py.Rectangle.top_left",
+            "field_type": "Point",
+            "range": {
+              "start_line": 30,
+              "start_column": 4,
+              "end_line": 30,
+              "end_column": 18
+            },
+            "raw_content": "top_left: Point"
+          },
+          {
+            "type": "CLASS_FIELD", 
+            "name": "bottom_right", 
+            "qualified_name": "complex_data_structures.py.Rectangle.bottom_right",
+            "field_type": "Point",
+            "range": {
+              "start_line": 31,
+              "start_column": 4,
+              "end_line": 31,
+              "end_column": 22
+            },
+            "raw_content": "bottom_right: Point"
+          },
+          {
+            "type": "METHOD",
+            "name": "area",
+            "qualified_name": "complex_data_structures.py.Rectangle.area",
+            "signature": "def area(self) -> float",
+            "parameters": ["self"],
+            "return_type": "float",
+            "docstring": "Calculate the area of the rectangle",
+            "range": {
+              "start_line": 33,
+              "start_column": 4,
+              "end_line": 37,
+              "end_column": 28
+            },
+            "raw_content": "def area(self) -> float:\n        \"\"\"Calculate the area of the rectangle\"\"\"\n        width = self.bottom_right.x - self.top_left.x\n        height = self.bottom_right.y - self.top_left.y\n        return width * height"
+          },
+          {
+            "type": "METHOD",
+            "name": "__str__",
+            "qualified_name": "complex_data_structures.py.Rectangle.__str__",
+            "signature": "def __str__(self) -> str",
+            "parameters": ["self"],
+            "return_type": "str",
+            "range": {
+              "start_line": 39,
+              "start_column": 4,
+              "end_line": 40,
+              "end_column": 69
+            },
+            "raw_content": "def __str__(self) -> str:\n        return f\"Rectangle({self.top_left} to {self.bottom_right})\""
+          }
+        ]
+      }
+    ]
+  }
+}
         "docstring": "A rectangle defined by its top-left and bottom-right corners"
       },
       {
