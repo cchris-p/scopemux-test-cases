@@ -1,0 +1,30 @@
+{
+    "language": "TypeScript",
+    "ast": {
+        "type": "translation_unit",
+        "functions": [
+            {
+                "name": "main",
+                "parameters": [],
+                "body": [
+                    {
+                        "type": "expression_statement",
+                        "expression": {
+                            "type": "call_expression",
+                            "callee": {
+                                "type": "identifier",
+                                "name": "console.log"
+                            },
+                            "arguments": [
+                                {
+                                    "type": "string_literal",
+                                    "value": "Hello, World!"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
