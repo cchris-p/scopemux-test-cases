@@ -1,448 +1,634 @@
 {
-  "language": "C",
   "ast": {
-    "type": "translation_unit",
-    "functions": [
+    "children": [
       {
+        "children": [],
+        "content": "/**\n * @file nested_control_flow_goto.c\n * @brief Demonstration of complex nested control flow and goto statements in C\n *\n * This example shows:\n * - Deeply nested if/else structures\n * - Nested loops (for, while)\n * - The use of goto statements for control flow\n * - Break and continue statements\n */",
+        "end_column": 3,
+        "end_line": 10,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 1,
+        "type": "DOCSTRING"
+      },
+      {
+        "children": [],
+        "content": "#include <stdbool.h>",
+        "end_column": 20,
+        "end_line": 12,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 12,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "#include <stdio.h>",
+        "end_column": 18,
+        "end_line": 13,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 13,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "/**\n * @brief Program entry point\n * @return Exit status code\n */",
+        "end_column": 3,
+        "end_line": 18,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 15,
+        "type": "DOCSTRING"
+      },
+      {
+        "children": [],
+        "content": "// Example 1: Nested loops with break",
+        "end_column": 37,
+        "end_line": 23,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 23,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Example 2: Goto for error handling",
+        "end_column": 37,
+        "end_line": 53,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 53,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Simulating an initialization sequence with error handling",
+        "end_column": 60,
+        "end_line": 59,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 59,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Imagine more steps here...",
+        "end_column": 29,
+        "end_line": 75,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 75,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Normal exit point",
+        "end_column": 20,
+        "end_line": 77,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 77,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Cleanup code runs regardless of how we reached this point",
+        "end_column": 60,
+        "end_line": 82,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 82,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Example 3: Complex nested conditions",
+        "end_column": 39,
+        "end_line": 85,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 85,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "end_column": 1,
+        "end_line": 796,
         "name": "main",
-        "type": "function_definition",
-        "return_type": "int",
-        "parameters": [],
-        "body_range": {
-          "start_line": 17,
-          "start_column": 0,
-          "end_line": 110,
-          "end_column": 1
-        },
-        "docstring": "Program entry point\nReturn Exit status code"
+        "qualified_name": "main",
+        "start_column": 1,
+        "start_line": 138,
+        "type": "FUNCTION"
       }
     ],
-    "includes": [
+    "end_column": 1,
+    "end_line": 117,
+    "name": "nested_control_flow_goto.c",
+    "qualified_name": "nested_control_flow_goto.c",
+    "start_column": 1,
+    "start_line": 1,
+    "type": "ROOT"
+  },
+  "cst": {
+    "children": [
       {
-        "path": "stdio.h",
-        "system": true,
-        "line": 11
+        "children": [],
+        "end_column": 20,
+        "end_line": 12,
+        "start_column": 1,
+        "start_line": 12,
+        "text": "#include <stdbool.h>",
+        "type": "include_directive"
       },
       {
-        "path": "stdbool.h",
-        "system": true,
-        "line": 12
+        "children": [],
+        "end_column": 18,
+        "end_line": 13,
+        "start_column": 1,
+        "start_line": 13,
+        "text": "#include <stdio.h>",
+        "type": "include_directive"
+      },
+      {
+        "children": [
+          {
+            "children": [],
+            "text": "int i, j, k;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "bool found = false;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "// Example 1: Nested loops with break",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Example 1: Nested loops with break\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "for (i = 0; i < 5; i++) {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Outer loop i=%d\\n\", i);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "for (j = 0; j < 3; j++) {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"  Middle loop j=%d\\n\", j);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "for (k = 0; k < 2; k++) {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"    Inner loop k=%d\\n\", k);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "if (i == 2 && j == 1 && k == 0) {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"    Found target values! Breaking inner loop\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "break;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "}",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "}",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "if (i == 2 && j == 1) {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"  Breaking middle loop\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "break;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "}",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "}",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "if (i == 2) {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Breaking outer loop\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "break;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "}",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "}",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "// Example 2: Goto for error handling",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"\\nExample 2: Goto for error handling\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "int result = 0;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "int *data = NULL;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "// Simulating an initialization sequence with error handling",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "if (result != 0) {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Step 1 failed\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "goto cleanup;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "}",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Step 1 succeeded\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "if (data == NULL) {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Step 2 failed\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "result = -1;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "goto cleanup;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "}",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Step 2 succeeded\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "// Imagine more steps here...",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "// Normal exit point",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"All steps completed successfully\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "result = 0;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "cleanup:",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "// Cleanup code runs regardless of how we reached this point",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Performing cleanup (result=%d)\\n\", result);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "// Example 3: Complex nested conditions",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"\\nExample 3: Complex nested conditions\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "int a = 5, b = 10, c = 15;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "if (a < 10) {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"a < 10\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "if (b > 5) {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"  b > 5\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "if (c > 20) {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"    c > 20\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "} else if (c > 10) {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"    c > 10\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "if (a + b > c) {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"      a + b > c\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "} else {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"      a + b <= c\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "}",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "} else {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"    c <= 10\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "}",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "} else {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"  b <= 5\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "}",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "} else {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"a >= 10\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "}",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "return 0;",
+            "type": "statement"
+          }
+        ],
+        "end_column": 1,
+        "end_line": 117,
+        "name": "main",
+        "start_column": 1,
+        "start_line": 19,
+        "text": "int main() {\n  int i, j, k;\n  bool found = false;\n\n  // Example 1: Nested loops with break\n  printf(\"Example 1: Nested loops with break\\n\");\n\n  for (i = 0; i < 5; i++) {\n    printf(\"Outer loop i=%d\\n\", i);\n\n    for (j = 0; j < 3; j++) {\n      printf(\"  Middle loop j=%d\\n\", j);\n\n      for (k = 0; k < 2; k++) {\n        printf(\"    Inner loop k=%d\\n\", k);\n\n        if (i == 2 && j == 1 && k == 0) {\n          printf(\"    Found target values! Breaking inner loop\\n\");\n          break;\n        }\n      }\n\n      if (i == 2 && j == 1) {\n        printf(\"  Breaking middle loop\\n\");\n        break;\n      }\n    }\n\n    if (i == 2) {\n      printf(\"Breaking outer loop\\n\");\n      break;\n    }\n  }\n\n  // Example 2: Goto for error handling\n  printf(\"\\nExample 2: Goto for error handling\\n\");\n\n  int result = 0;\n  int *data = NULL;\n\n  // Simulating an initialization sequence with error handling\n  if (result != 0) {\n    printf(\"Step 1 failed\\n\");\n    goto cleanup;\n  }\n\n  printf(\"Step 1 succeeded\\n\");\n\n  if (data == NULL) {\n    printf(\"Step 2 failed\\n\");\n    result = -1;\n    goto cleanup;\n  }\n\n  printf(\"Step 2 succeeded\\n\");\n\n  // Imagine more steps here...\n\n  // Normal exit point\n  printf(\"All steps completed successfully\\n\");\n  result = 0;\n\ncleanup:\n  // Cleanup code runs regardless of how we reached this point\n  printf(\"Performing cleanup (result=%d)\\n\", result);\n\n  // Example 3: Complex nested conditions\n  printf(\"\\nExample 3: Complex nested conditions\\n\");\n\n  int a = 5, b = 10, c = 15;\n\n  if (a < 10) {\n    printf(\"a < 10\\n\");\n\n    if (b > 5) {\n      printf(\"  b > 5\\n\");\n\n      if (c > 20) {\n        printf(\"    c > 20\\n\");\n      } else if (c > 10) {\n        printf(\"    c > 10\\n\");\n\n        if (a + b > c) {\n          printf(\"      a + b > c\\n\");\n        } else {\n          printf(\"      a + b <= c\\n\");\n        }\n      } else {\n        printf(\"    c <= 10\\n\");\n      }\n    } else {\n      printf(\"  b <= 5\\n\");\n    }\n  } else {\n    printf(\"a >= 10\\n\");\n  }\n\n  return 0;\n}",
+        "type": "function_definition"
+      },
+      {
+        "children": [],
+        "end_column": 3,
+        "end_line": 10,
+        "start_column": 1,
+        "start_line": 1,
+        "text": "/**\n * @file nested_control_flow_goto.c\n * @brief Demonstration of complex nested control flow and goto statements in C\n *\n * This example shows:\n * - Deeply nested if/else structures\n * - Nested loops (for, while)\n * - The use of goto statements for control flow\n * - Break and continue statements\n */",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 3,
+        "end_line": 18,
+        "start_column": 1,
+        "start_line": 15,
+        "text": "/**\n * @brief Program entry point\n * @return Exit status code\n */",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 37,
+        "end_line": 23,
+        "start_column": 1,
+        "start_line": 23,
+        "text": "// Example 1: Nested loops with break",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 37,
+        "end_line": 53,
+        "start_column": 1,
+        "start_line": 53,
+        "text": "// Example 2: Goto for error handling",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 60,
+        "end_line": 59,
+        "start_column": 1,
+        "start_line": 59,
+        "text": "// Simulating an initialization sequence with error handling",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 29,
+        "end_line": 75,
+        "start_column": 1,
+        "start_line": 75,
+        "text": "// Imagine more steps here...",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 20,
+        "end_line": 77,
+        "start_column": 1,
+        "start_line": 77,
+        "text": "// Normal exit point",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 60,
+        "end_line": 82,
+        "start_column": 1,
+        "start_line": 82,
+        "text": "// Cleanup code runs regardless of how we reached this point",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 39,
+        "end_line": 85,
+        "start_column": 1,
+        "start_line": 85,
+        "text": "// Example 3: Complex nested conditions",
+        "type": "comment"
       }
     ],
-    "comments": [
-      {
-        "type": "block_comment",
-        "text": "This example shows:\n- Deeply nested if/else structures\n- Nested loops (for, while)\n- The use of goto statements for control flow\n- Break and continue statements",
-        "range": {
-          "start_line": 1,
-          "start_column": 0,
-          "end_line": 9,
-          "end_column": 3
-        }
-      },
-      {
-        "type": "block_comment",
-        "text": "Program entry point\nReturn Exit status code",
-        "range": {
-          "start_line": 14,
-          "start_column": 0,
-          "end_line": 17,
-          "end_column": 3
-        }
-      },
-      {
-        "type": "line_comment",
-        "text": "Example 1: Nested loops with break",
-        "line": 21
-      },
-      {
-        "type": "line_comment",
-        "text": "Example 2: Goto for error handling",
-        "line": 47
-      },
-      {
-        "type": "line_comment",
-        "text": "Simulating an initialization sequence with error handling",
-        "line": 52
-      },
-      {
-        "type": "line_comment",
-        "text": "Imagine more steps here...",
-        "line": 67
-      },
-      {
-        "type": "line_comment",
-        "text": "Normal exit point",
-        "line": 70
-      },
-      {
-        "type": "line_comment",
-        "text": "Cleanup code runs regardless of how we reached this point",
-        "line": 75
-      },
-      {
-        "type": "line_comment",
-        "text": "Example 3: Complex nested conditions",
-        "line": 78
-      }
-    ],
-    "variable_declarations": [
-      {
-        "name": "i",
-        "type": "int",
-        "line": 18,
-        "initialized": false
-      },
-      {
-        "name": "j",
-        "type": "int",
-        "line": 18,
-        "initialized": false
-      },
-      {
-        "name": "k",
-        "type": "int",
-        "line": 18,
-        "initialized": false
-      },
-      {
-        "name": "found",
-        "type": "bool",
-        "line": 19,
-        "initialized": true
-      },
-      {
-        "name": "result",
-        "type": "int",
-        "line": 50,
-        "initialized": true
-      },
-      {
-        "name": "data",
-        "type": "int*",
-        "line": 51,
-        "initialized": true
-      },
-      {
-        "name": "a",
-        "type": "int",
-        "line": 80,
-        "initialized": true
-      },
-      {
-        "name": "b",
-        "type": "int",
-        "line": 80,
-        "initialized": true
-      },
-      {
-        "name": "c",
-        "type": "int",
-        "line": 80,
-        "initialized": true
-      }
-    ],
-    "loops": [
-      {
-        "type": "for_statement",
-        "range": {
-          "start_line": 23,
-          "start_column": 4,
-          "end_line": 44,
-          "end_column": 5
-        }
-      },
-      {
-        "type": "for_statement",
-        "range": {
-          "start_line": 26,
-          "start_column": 8,
-          "end_line": 40,
-          "end_column": 9
-        }
-      },
-      {
-        "type": "for_statement",
-        "range": {
-          "start_line": 29,
-          "start_column": 12,
-          "end_line": 36,
-          "end_column": 13
-        }
-      }
-    ],
-    "conditionals": [
-      {
-        "type": "if_statement",
-        "range": {
-          "start_line": 32,
-          "start_column": 16,
-          "end_line": 35,
-          "end_column": 17
-        }
-      },
-      {
-        "type": "if_statement",
-        "range": {
-          "start_line": 38,
-          "start_column": 12,
-          "end_line": 41,
-          "end_column": 13
-        }
-      },
-      {
-        "type": "if_statement",
-        "range": {
-          "start_line": 43,
-          "start_column": 8,
-          "end_line": 46,
-          "end_column": 9
-        }
-      },
-      {
-        "type": "if_statement",
-        "range": {
-          "start_line": 53,
-          "start_column": 4,
-          "end_line": 56,
-          "end_column": 5
-        }
-      },
-      {
-        "type": "if_statement",
-        "range": {
-          "start_line": 60,
-          "start_column": 4,
-          "end_line": 64,
-          "end_column": 5
-        }
-      },
-      {
-        "type": "if_statement",
-        "range": {
-          "start_line": 82,
-          "start_column": 4,
-          "end_line": 106,
-          "end_column": 5
-        }
-      },
-      {
-        "type": "if_statement",
-        "range": {
-          "start_line": 85,
-          "start_column": 8,
-          "end_line": 103,
-          "end_column": 9
-        }
-      },
-      {
-        "type": "if_statement",
-        "range": {
-          "start_line": 88,
-          "start_column": 12,
-          "end_line": 100,
-          "end_column": 13
-        }
-      },
-      {
-        "type": "if_statement",
-        "range": {
-          "start_line": 92,
-          "start_column": 16,
-          "end_line": 96,
-          "end_column": 17
-        }
-      }
-    ],
-    "goto_statements": [
-      {
-        "label": "cleanup",
-        "line": 55
-      },
-      {
-        "label": "cleanup",
-        "line": 63
-      }
-    ],
-    "labels": [
-      {
-        "name": "cleanup",
-        "line": 74
-      }
-    ],
-    "function_calls": [
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Example 1: Nested loops with break\\n\""
-        ],
-        "line": 22
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Outer loop i=%d\\n\"",
-          "i"
-        ],
-        "line": 24
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"  Middle loop j=%d\\n\"",
-          "j"
-        ],
-        "line": 27
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"    Inner loop k=%d\\n\"",
-          "k"
-        ],
-        "line": 30
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"    Found target values! Breaking inner loop\\n\""
-        ],
-        "line": 33
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"  Breaking middle loop\\n\""
-        ],
-        "line": 39
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Breaking outer loop\\n\""
-        ],
-        "line": 44
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"\\nExample 2: Goto for error handling\\n\""
-        ],
-        "line": 48
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Step 1 failed\\n\""
-        ],
-        "line": 54
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Step 1 succeeded\\n\""
-        ],
-        "line": 58
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Step 2 failed\\n\""
-        ],
-        "line": 61
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Step 2 succeeded\\n\""
-        ],
-        "line": 65
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"All steps completed successfully\\n\""
-        ],
-        "line": 71
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Performing cleanup (result=%d)\\n\"",
-          "result"
-        ],
-        "line": 76
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"\\nExample 3: Complex nested conditions\\n\""
-        ],
-        "line": 79
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"a < 10\\n\""
-        ],
-        "line": 83
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"  b > 5\\n\""
-        ],
-        "line": 86
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"    c > 20\\n\""
-        ],
-        "line": 89
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"    c > 10\\n\""
-        ],
-        "line": 91
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"      a + b > c\\n\""
-        ],
-        "line": 94
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"      a + b <= c\\n\""
-        ],
-        "line": 96
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"    c <= 10\\n\""
-        ],
-        "line": 99
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"  b <= 5\\n\""
-        ],
-        "line": 102
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"a >= 10\\n\""
-        ],
-        "line": 105
-      }
-    ]
-  }
+    "end_column": 1,
+    "end_line": 117,
+    "start_column": 1,
+    "start_line": 1,
+    "type": "translation_unit"
+  },
+  "language": "C"
 }

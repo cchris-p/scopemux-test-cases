@@ -1,716 +1,779 @@
 {
-  "language": "C",
   "ast": {
-    "type": "translation_unit",
-    "functions": [
+    "children": [
       {
-        "name": "print_point",
-        "type": "function_definition",
-        "return_type": "void",
-        "parameters": [
-          {"name": "p", "type": "struct Point"}
-        ],
-        "body_range": {
-          "start_line": 75,
-          "start_column": 0,
-          "end_line": 77,
-          "end_column": 1
-        },
-        "docstring": "Print details about a Point structure\nParam p The Point to print"
+        "children": [],
+        "content": "/**\n * @file complex_data_types.c\n * @brief Demonstration of structures, unions, and enumerations in C\n *\n * This example shows:\n * - Structure definitions and usage\n * - Nested structures\n * - Unions\n * - Enumerations\n * - Typedef\n * - Bit fields\n */",
+        "end_column": 3,
+        "end_line": 12,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 1,
+        "type": "DOCSTRING"
       },
       {
-        "name": "rectangle_area",
-        "type": "function_definition",
-        "return_type": "int",
-        "parameters": [
-          {"name": "rect", "type": "struct Rectangle"}
-        ],
-        "body_range": {
-          "start_line": 85,
-          "start_column": 0,
-          "end_line": 89,
-          "end_column": 1
-        },
-        "docstring": "Calculate the area of a Rectangle\nParam rect The Rectangle to calculate the area of\nReturn The area of the rectangle"
+        "children": [],
+        "content": "#include <stdio.h>",
+        "end_column": 18,
+        "end_line": 14,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 14,
+        "type": "COMMENT"
       },
       {
-        "name": "color_to_string",
-        "type": "function_definition",
-        "return_type": "const char*",
-        "parameters": [
-          {"name": "color", "type": "enum Color"}
-        ],
-        "body_range": {
-          "start_line": 97,
-          "start_column": 0,
-          "end_line": 107,
-          "end_column": 1
-        },
-        "docstring": "Convert a Color enum to its string representation\nParam color The Color to convert\nReturn String representation of the color"
+        "children": [],
+        "content": "#include <string.h>",
+        "end_column": 19,
+        "end_line": 15,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 15,
+        "type": "COMMENT"
       },
       {
+        "children": [],
+        "content": "#include <stdlib.h>",
+        "end_column": 19,
+        "end_line": 16,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 16,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Simple enumeration",
+        "end_column": 21,
+        "end_line": 18,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 18,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Enumeration with typedef",
+        "end_column": 27,
+        "end_line": 28,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 28,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Simple structure",
+        "end_column": 19,
+        "end_line": 39,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 39,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Structure with typedef",
+        "end_column": 25,
+        "end_line": 45,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 45,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Nested structure",
+        "end_column": 19,
+        "end_line": 53,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 53,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Structure with bit fields",
+        "end_column": 28,
+        "end_line": 59,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 59,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Union example",
+        "end_column": 16,
+        "end_line": 66,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 66,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Structure containing a union",
+        "end_column": 31,
+        "end_line": 73,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 73,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "/**\n * @brief Print details about a Point structure\n * @param p The Point to print\n */",
+        "end_column": 3,
+        "end_line": 86,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 83,
+        "type": "DOCSTRING"
+      },
+      {
+        "children": [],
+        "content": "/**\n * @brief Calculate the area of a Rectangle\n * @param rect The Rectangle to calculate the area of\n * @return The area of the rectangle\n */",
+        "end_column": 3,
+        "end_line": 95,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 91,
+        "type": "DOCSTRING"
+      },
+      {
+        "children": [],
+        "content": "/**\n * @brief Convert a Color enum to its string representation\n * @param color The Color to convert\n * @return String representation of the color\n */",
+        "end_column": 3,
+        "end_line": 106,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 102,
+        "type": "DOCSTRING"
+      },
+      {
+        "children": [],
+        "content": "/**\n * @brief Program entry point\n * @return Exit status code\n */",
+        "end_column": 3,
+        "end_line": 122,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 119,
+        "type": "DOCSTRING"
+      },
+      {
+        "children": [],
+        "content": "// Using enumerations",
+        "end_column": 21,
+        "end_line": 124,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 124,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Using structures",
+        "end_column": 19,
+        "end_line": 131,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 131,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Using nested structures",
+        "end_column": 26,
+        "end_line": 139,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 139,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Using typedef structures",
+        "end_column": 27,
+        "end_line": 152,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 152,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Using bit fields",
+        "end_column": 19,
+        "end_line": 165,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 165,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Using unions",
+        "end_column": 15,
+        "end_line": 173,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 173,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Using structure with union",
+        "end_column": 29,
+        "end_line": 185,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 185,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "end_column": 1,
+        "end_line": 1487,
         "name": "main",
-        "type": "function_definition",
-        "return_type": "int",
-        "parameters": [],
-        "body_range": {
-          "start_line": 113,
-          "start_column": 0,
-          "end_line": 178,
-          "end_column": 1
-        },
-        "docstring": "Program entry point\nReturn Exit status code"
+        "qualified_name": "main",
+        "start_column": 1,
+        "start_line": 802,
+        "type": "FUNCTION"
       }
     ],
-    "includes": [
+    "end_column": 1,
+    "end_line": 195,
+    "name": "complex_data_types.c",
+    "qualified_name": "complex_data_types.c",
+    "start_column": 1,
+    "start_line": 1,
+    "type": "ROOT"
+  },
+  "cst": {
+    "children": [
       {
-        "path": "stdio.h",
-        "system": true,
-        "line": 12
+        "children": [],
+        "end_column": 18,
+        "end_line": 14,
+        "start_column": 1,
+        "start_line": 14,
+        "text": "#include <stdio.h>",
+        "type": "include_directive"
       },
       {
-        "path": "string.h",
-        "system": true,
-        "line": 13
+        "children": [],
+        "end_column": 19,
+        "end_line": 15,
+        "start_column": 1,
+        "start_line": 15,
+        "text": "#include <string.h>",
+        "type": "include_directive"
       },
       {
-        "path": "stdlib.h",
-        "system": true,
-        "line": 14
-      }
-    ],
-    "comments": [
-      {
-        "type": "block_comment",
-        "text": "This example shows:\n- Structure definitions and usage\n- Nested structures\n- Unions\n- Enumerations\n- Typedef\n- Bit fields",
-        "range": {
-          "start_line": 1,
-          "start_column": 0,
-          "end_line": 10,
-          "end_column": 3
-        }
+        "children": [],
+        "end_column": 19,
+        "end_line": 16,
+        "start_column": 1,
+        "start_line": 16,
+        "text": "#include <stdlib.h>",
+        "type": "include_directive"
       },
       {
-        "type": "line_comment",
-        "text": "Simple enumeration",
-        "line": 16
-      },
-      {
-        "type": "line_comment",
-        "text": "0 by default",
-        "line": 17
-      },
-      {
-        "type": "line_comment",
-        "text": "1",
-        "line": 18
-      },
-      {
-        "type": "line_comment",
-        "text": "2",
-        "line": 19
-      },
-      {
-        "type": "line_comment",
-        "text": "11",
-        "line": 21
-      },
-      {
-        "type": "line_comment",
-        "text": "12",
-        "line": 22
-      },
-      {
-        "type": "line_comment",
-        "text": "Enumeration with typedef",
-        "line": 25
-      },
-      {
-        "type": "line_comment",
-        "text": "Simple structure",
-        "line": 35
-      },
-      {
-        "type": "line_comment",
-        "text": "Structure with typedef",
-        "line": 40
-      },
-      {
-        "type": "line_comment",
-        "text": "Nested structure",
-        "line": 48
-      },
-      {
-        "type": "line_comment",
-        "text": "Structure with bit fields",
-        "line": 54
-      },
-      {
-        "type": "line_comment",
-        "text": "1 bit",
-        "line": 55
-      },
-      {
-        "type": "line_comment",
-        "text": "3 bits (0-7)",
-        "line": 56
-      },
-      {
-        "type": "line_comment",
-        "text": "4 bits (0-15)",
-        "line": 57
-      },
-      {
-        "type": "line_comment",
-        "text": "Union example",
-        "line": 61
-      },
-      {
-        "type": "line_comment",
-        "text": "Structure containing a union",
-        "line": 68
-      },
-      {
-        "type": "block_comment",
-        "text": "Print details about a Point structure\nParam p The Point to print",
-        "range": {
-          "start_line": 72,
-          "start_column": 0,
-          "end_line": 75,
-          "end_column": 3
-        }
-      },
-      {
-        "type": "block_comment",
-        "text": "Calculate the area of a Rectangle\nParam rect The Rectangle to calculate the area of\nReturn The area of the rectangle",
-        "range": {
-          "start_line": 81,
-          "start_column": 0,
-          "end_line": 85,
-          "end_column": 3
-        }
-      },
-      {
-        "type": "block_comment",
-        "text": "Convert a Color enum to its string representation\nParam color The Color to convert\nReturn String representation of the color",
-        "range": {
-          "start_line": 93,
-          "start_column": 0,
-          "end_line": 97,
-          "end_column": 3
-        }
-      },
-      {
-        "type": "block_comment",
-        "text": "Program entry point\nReturn Exit status code",
-        "range": {
-          "start_line": 110,
-          "start_column": 0,
-          "end_line": 113,
-          "end_column": 3
-        }
-      },
-      {
-        "type": "line_comment",
-        "text": "Using enumerations",
-        "line": 114
-      },
-      {
-        "type": "line_comment",
-        "text": "Using structures",
-        "line": 120
-      },
-      {
-        "type": "line_comment",
-        "text": "Designated initializers",
-        "line": 121
-      },
-      {
-        "type": "line_comment",
-        "text": "Using nested structures",
-        "line": 127
-      },
-      {
-        "type": "line_comment",
-        "text": "Using typedef structures",
-        "line": 138
-      },
-      {
-        "type": "line_comment",
-        "text": "Using bit fields",
-        "line": 149
-      },
-      {
-        "type": "line_comment",
-        "text": "Using unions",
-        "line": 156
-      },
-      {
-        "type": "line_comment",
-        "text": "Using structure with union",
-        "line": 167
-      }
-    ],
-    "enums": [
-      {
-        "name": "Color",
-        "type": "enum_definition",
-        "values": [
-          {"name": "RED", "value": 0},
-          {"name": "GREEN", "value": 1},
-          {"name": "BLUE", "value": 2},
-          {"name": "YELLOW", "value": 10},
-          {"name": "PURPLE", "value": 11},
-          {"name": "ORANGE", "value": 12}
-        ],
-        "range": {
-          "start_line": 16,
-          "start_column": 0,
-          "end_line": 23,
-          "end_column": 1
-        }
-      },
-      {
-        "name": "Weekday",
-        "type": "enum_definition",
-        "typedef": true,
-        "values": [
-          {"name": "MONDAY", "value": 1},
-          {"name": "TUESDAY", "value": 2},
-          {"name": "WEDNESDAY", "value": 3},
-          {"name": "THURSDAY", "value": 4},
-          {"name": "FRIDAY", "value": 5},
-          {"name": "SATURDAY", "value": 6},
-          {"name": "SUNDAY", "value": 7}
-        ],
-        "range": {
-          "start_line": 25,
-          "start_column": 0,
-          "end_line": 33,
-          "end_column": 1
-        }
-      }
-    ],
-    "structs": [
-      {
-        "name": "Point",
-        "type": "struct_definition",
-        "members": [
-          {"name": "x", "type": "int"},
-          {"name": "y", "type": "int"}
-        ],
-        "range": {
-          "start_line": 35,
-          "start_column": 0,
-          "end_line": 38,
-          "end_column": 1
-        }
-      },
-      {
-        "name": "Book",
-        "type": "struct_definition",
-        "typedef": true,
-        "members": [
-          {"name": "title", "type": "char[50]"},
-          {"name": "author", "type": "char[50]"},
-          {"name": "year", "type": "int"},
-          {"name": "price", "type": "float"}
-        ],
-        "range": {
-          "start_line": 40,
-          "start_column": 0,
-          "end_line": 46,
-          "end_column": 1
-        }
-      },
-      {
-        "name": "Rectangle",
-        "type": "struct_definition",
-        "members": [
-          {"name": "topLeft", "type": "struct Point"},
-          {"name": "bottomRight", "type": "struct Point"}
-        ],
-        "range": {
-          "start_line": 48,
-          "start_column": 0,
-          "end_line": 51,
-          "end_column": 1
-        }
-      },
-      {
-        "name": "Flags",
-        "type": "struct_definition",
-        "typedef": true,
-        "members": [
-          {"name": "is_active", "type": "unsigned int", "bit_field": 1},
-          {"name": "permission", "type": "unsigned int", "bit_field": 3},
-          {"name": "user_level", "type": "unsigned int", "bit_field": 4}
-        ],
-        "range": {
-          "start_line": 54,
-          "start_column": 0,
-          "end_line": 58,
-          "end_column": 1
-        }
-      },
-      {
-        "name": "ColoredValue",
-        "type": "struct_definition",
-        "typedef": true,
-        "members": [
-          {"name": "color", "type": "enum Color"},
+        "children": [
           {
-            "name": "value",
-            "type": "union",
-            "members": [
-              {"name": "i_value", "type": "int"},
-              {"name": "f_value", "type": "float"},
-              {"name": "c_value", "type": "char"}
-            ]
+            "children": [],
+            "text": "// Using enumerations",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "enum Color background = BLUE;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "Weekday today = WEDNESDAY;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Background color: %s (value: %d)\\n\", color_to_string(background), background);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Today is day %d of the week\\n\", today);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "// Using structures",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "struct Point p1 = {10, 20};",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "struct Point p2 = {.y = 5, .x = 15}; // Designated initializers",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"\\nPoints:\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "print_point(p1);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "print_point(p2);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "// Using nested structures",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "struct Rectangle rect = {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": ".topLeft = {0, 0},",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": ".bottomRight = {5, 10}",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "};",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"\\nRectangle:\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Top-left: \");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "print_point(rect.topLeft);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Bottom-right: \");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "print_point(rect.bottomRight);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Area: %d\\n\", rectangle_area(rect));",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "// Using typedef structures",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "Book book1;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "strcpy(book1.title, \"C Programming\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "strcpy(book1.author, \"Dennis Ritchie\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "book1.year = 1978;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "book1.price = 29.99;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"\\nBook:\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Title: %s\\n\", book1.title);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Author: %s\\n\", book1.author);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Year: %d\\n\", book1.year);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Price: $%.2f\\n\", book1.price);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "// Using bit fields",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "Flags user_flags = {1, 5, 10};",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"\\nUser flags:\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Active: %d\\n\", user_flags.is_active);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Permission: %d\\n\", user_flags.permission);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"User level: %d\\n\", user_flags.user_level);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "// Using unions",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "union Data data;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "data.i = 10;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"\\nUnion as int: %d\\n\", data.i);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "data.f = 220.5;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Union as float: %.1f\\n\", data.f);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "strcpy(data.str, \"C Programming\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Union as string: %s\\n\", data.str);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "// Using structure with union",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "ColoredValue cv = {RED, .value.i_value = 100};",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"\\nColored value:\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Color: %s\\n\", color_to_string(cv.color));",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Integer value: %d\\n\", cv.value.i_value);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "cv.value.f_value = 99.9;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"Float value (same memory): %f\\n\", cv.value.f_value);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "return 0;",
+            "type": "statement"
           }
         ],
-        "range": {
-          "start_line": 68,
-          "start_column": 0,
-          "end_line": 75,
-          "end_column": 1
-        }
+        "end_column": 1,
+        "end_line": 195,
+        "name": "main",
+        "start_column": 1,
+        "start_line": 123,
+        "text": "int main() {\n    // Using enumerations\n    enum Color background = BLUE;\n    Weekday today = WEDNESDAY;\n    \n    printf(\"Background color: %s (value: %d)\\n\", color_to_string(background), background);\n    printf(\"Today is day %d of the week\\n\", today);\n    \n    // Using structures\n    struct Point p1 = {10, 20};\n    struct Point p2 = {.y = 5, .x = 15}; // Designated initializers\n    \n    printf(\"\\nPoints:\\n\");\n    print_point(p1);\n    print_point(p2);\n    \n    // Using nested structures\n    struct Rectangle rect = {\n        .topLeft = {0, 0},\n        .bottomRight = {5, 10}\n    };\n    \n    printf(\"\\nRectangle:\\n\");\n    printf(\"Top-left: \");\n    print_point(rect.topLeft);\n    printf(\"Bottom-right: \");\n    print_point(rect.bottomRight);\n    printf(\"Area: %d\\n\", rectangle_area(rect));\n    \n    // Using typedef structures\n    Book book1;\n    strcpy(book1.title, \"C Programming\");\n    strcpy(book1.author, \"Dennis Ritchie\");\n    book1.year = 1978;\n    book1.price = 29.99;\n    \n    printf(\"\\nBook:\\n\");\n    printf(\"Title: %s\\n\", book1.title);\n    printf(\"Author: %s\\n\", book1.author);\n    printf(\"Year: %d\\n\", book1.year);\n    printf(\"Price: $%.2f\\n\", book1.price);\n    \n    // Using bit fields\n    Flags user_flags = {1, 5, 10};\n    \n    printf(\"\\nUser flags:\\n\");\n    printf(\"Active: %d\\n\", user_flags.is_active);\n    printf(\"Permission: %d\\n\", user_flags.permission);\n    printf(\"User level: %d\\n\", user_flags.user_level);\n    \n    // Using unions\n    union Data data;\n    \n    data.i = 10;\n    printf(\"\\nUnion as int: %d\\n\", data.i);\n    \n    data.f = 220.5;\n    printf(\"Union as float: %.1f\\n\", data.f);\n    \n    strcpy(data.str, \"C Programming\");\n    printf(\"Union as string: %s\\n\", data.str);\n    \n    // Using structure with union\n    ColoredValue cv = {RED, .value.i_value = 100};\n    printf(\"\\nColored value:\\n\");\n    printf(\"Color: %s\\n\", color_to_string(cv.color));\n    printf(\"Integer value: %d\\n\", cv.value.i_value);\n    \n    cv.value.f_value = 99.9;\n    printf(\"Float value (same memory): %f\\n\", cv.value.f_value);\n    \n    return 0;\n}",
+        "type": "function_definition"
+      },
+      {
+        "children": [],
+        "end_column": 3,
+        "end_line": 12,
+        "start_column": 1,
+        "start_line": 1,
+        "text": "/**\n * @file complex_data_types.c\n * @brief Demonstration of structures, unions, and enumerations in C\n *\n * This example shows:\n * - Structure definitions and usage\n * - Nested structures\n * - Unions\n * - Enumerations\n * - Typedef\n * - Bit fields\n */",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 21,
+        "end_line": 18,
+        "start_column": 1,
+        "start_line": 18,
+        "text": "// Simple enumeration",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 27,
+        "end_line": 28,
+        "start_column": 1,
+        "start_line": 28,
+        "text": "// Enumeration with typedef",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 19,
+        "end_line": 39,
+        "start_column": 1,
+        "start_line": 39,
+        "text": "// Simple structure",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 25,
+        "end_line": 45,
+        "start_column": 1,
+        "start_line": 45,
+        "text": "// Structure with typedef",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 19,
+        "end_line": 53,
+        "start_column": 1,
+        "start_line": 53,
+        "text": "// Nested structure",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 28,
+        "end_line": 59,
+        "start_column": 1,
+        "start_line": 59,
+        "text": "// Structure with bit fields",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 16,
+        "end_line": 66,
+        "start_column": 1,
+        "start_line": 66,
+        "text": "// Union example",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 31,
+        "end_line": 73,
+        "start_column": 1,
+        "start_line": 73,
+        "text": "// Structure containing a union",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 3,
+        "end_line": 86,
+        "start_column": 1,
+        "start_line": 83,
+        "text": "/**\n * @brief Print details about a Point structure\n * @param p The Point to print\n */",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 3,
+        "end_line": 95,
+        "start_column": 1,
+        "start_line": 91,
+        "text": "/**\n * @brief Calculate the area of a Rectangle\n * @param rect The Rectangle to calculate the area of\n * @return The area of the rectangle\n */",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 3,
+        "end_line": 106,
+        "start_column": 1,
+        "start_line": 102,
+        "text": "/**\n * @brief Convert a Color enum to its string representation\n * @param color The Color to convert\n * @return String representation of the color\n */",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 3,
+        "end_line": 122,
+        "start_column": 1,
+        "start_line": 119,
+        "text": "/**\n * @brief Program entry point\n * @return Exit status code\n */",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 21,
+        "end_line": 124,
+        "start_column": 1,
+        "start_line": 124,
+        "text": "// Using enumerations",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 19,
+        "end_line": 131,
+        "start_column": 1,
+        "start_line": 131,
+        "text": "// Using structures",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 26,
+        "end_line": 139,
+        "start_column": 1,
+        "start_line": 139,
+        "text": "// Using nested structures",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 27,
+        "end_line": 152,
+        "start_column": 1,
+        "start_line": 152,
+        "text": "// Using typedef structures",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 19,
+        "end_line": 165,
+        "start_column": 1,
+        "start_line": 165,
+        "text": "// Using bit fields",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 15,
+        "end_line": 173,
+        "start_column": 1,
+        "start_line": 173,
+        "text": "// Using unions",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 29,
+        "end_line": 185,
+        "start_column": 1,
+        "start_line": 185,
+        "text": "// Using structure with union",
+        "type": "comment"
       }
     ],
-    "unions": [
-      {
-        "name": "Data",
-        "type": "union_definition",
-        "members": [
-          {"name": "i", "type": "int"},
-          {"name": "f", "type": "float"},
-          {"name": "str", "type": "char[20]"}
-        ],
-        "range": {
-          "start_line": 61,
-          "start_column": 0,
-          "end_line": 65,
-          "end_column": 1
-        }
-      }
-    ],
-    "variable_declarations": [
-      {
-        "name": "background",
-        "type": "enum Color",
-        "line": 114,
-        "initialized": true
-      },
-      {
-        "name": "today",
-        "type": "Weekday",
-        "line": 115,
-        "initialized": true
-      },
-      {
-        "name": "p1",
-        "type": "struct Point",
-        "line": 120,
-        "initialized": true
-      },
-      {
-        "name": "p2",
-        "type": "struct Point",
-        "line": 121,
-        "initialized": true
-      },
-      {
-        "name": "rect",
-        "type": "struct Rectangle",
-        "line": 127,
-        "initialized": true
-      },
-      {
-        "name": "book1",
-        "type": "Book",
-        "line": 138,
-        "initialized": false
-      },
-      {
-        "name": "user_flags",
-        "type": "Flags",
-        "line": 149,
-        "initialized": true
-      },
-      {
-        "name": "data",
-        "type": "union Data",
-        "line": 156,
-        "initialized": false
-      },
-      {
-        "name": "cv",
-        "type": "ColoredValue",
-        "line": 167,
-        "initialized": true
-      }
-    ],
-    "function_calls": [
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Point(%d, %d)\\n\"",
-          "p.x",
-          "p.y"
-        ],
-        "line": 76
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Background color: %s (value: %d)\\n\"",
-          "color_to_string(background)",
-          "background"
-        ],
-        "line": 117
-      },
-      {
-        "name": "color_to_string",
-        "arguments": [
-          "background"
-        ],
-        "line": 117
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Today is day %d of the week\\n\"",
-          "today"
-        ],
-        "line": 118
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"\\nPoints:\\n\""
-        ],
-        "line": 123
-      },
-      {
-        "name": "print_point",
-        "arguments": [
-          "p1"
-        ],
-        "line": 124
-      },
-      {
-        "name": "print_point",
-        "arguments": [
-          "p2"
-        ],
-        "line": 125
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"\\nRectangle:\\n\""
-        ],
-        "line": 132
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Top-left: \""
-        ],
-        "line": 133
-      },
-      {
-        "name": "print_point",
-        "arguments": [
-          "rect.topLeft"
-        ],
-        "line": 134
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Bottom-right: \""
-        ],
-        "line": 135
-      },
-      {
-        "name": "print_point",
-        "arguments": [
-          "rect.bottomRight"
-        ],
-        "line": 136
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Area: %d\\n\"",
-          "rectangle_area(rect)"
-        ],
-        "line": 137
-      },
-      {
-        "name": "rectangle_area",
-        "arguments": [
-          "rect"
-        ],
-        "line": 137
-      },
-      {
-        "name": "strcpy",
-        "arguments": [
-          "book1.title",
-          "\"C Programming\""
-        ],
-        "line": 139
-      },
-      {
-        "name": "strcpy",
-        "arguments": [
-          "book1.author",
-          "\"Dennis Ritchie\""
-        ],
-        "line": 140
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"\\nBook:\\n\""
-        ],
-        "line": 144
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Title: %s\\n\"",
-          "book1.title"
-        ],
-        "line": 145
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Author: %s\\n\"",
-          "book1.author"
-        ],
-        "line": 146
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Year: %d\\n\"",
-          "book1.year"
-        ],
-        "line": 147
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Price: $%.2f\\n\"",
-          "book1.price"
-        ],
-        "line": 148
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"\\nUser flags:\\n\""
-        ],
-        "line": 151
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Active: %d\\n\"",
-          "user_flags.is_active"
-        ],
-        "line": 152
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Permission: %d\\n\"",
-          "user_flags.permission"
-        ],
-        "line": 153
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"User level: %d\\n\"",
-          "user_flags.user_level"
-        ],
-        "line": 154
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"\\nUnion as int: %d\\n\"",
-          "data.i"
-        ],
-        "line": 159
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Union as float: %.1f\\n\"",
-          "data.f"
-        ],
-        "line": 162
-      },
-      {
-        "name": "strcpy",
-        "arguments": [
-          "data.str",
-          "\"C Programming\""
-        ],
-        "line": 164
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Union as string: %s\\n\"",
-          "data.str"
-        ],
-        "line": 165
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"\\nColored value:\\n\""
-        ],
-        "line": 168
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Color: %s\\n\"",
-          "color_to_string(cv.color)"
-        ],
-        "line": 169
-      },
-      {
-        "name": "color_to_string",
-        "arguments": [
-          "cv.color"
-        ],
-        "line": 169
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Integer value: %d\\n\"",
-          "cv.value.i_value"
-        ],
-        "line": 170
-      },
-      {
-        "name": "printf",
-        "arguments": [
-          "\"Float value (same memory): %f\\n\"",
-          "cv.value.f_value"
-        ],
-        "line": 173
-      }
-    ]
-  }
+    "end_column": 1,
+    "end_line": 195,
+    "start_column": 1,
+    "start_line": 1,
+    "type": "translation_unit"
+  },
+  "language": "C"
 }

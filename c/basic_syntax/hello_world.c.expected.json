@@ -1,305 +1,508 @@
 {
-  "language": "C",
   "ast": {
-    "type": "ROOT",
+    "children": [],
+    "docstring": null,
     "name": "ROOT",
+    "parameters": [],
+    "path": null,
     "qualified_name": "hello_world.c",
-    "children": [
-      {
-        "type": "FUNCTION",
-        "name": "main",
-        "qualified_name": "hello_world.c.main",
-        "signature": "int main()",
-        "return_type": "int",
-        "parameters": [],
-        "docstring": "@brief Program entry point\n@return Exit status code",
-        "range": {
-          "start_line": 19,
-          "start_column": 0,
-          "end_line": 22,
-          "end_column": 1
-        },
-        "raw_content": "int main() {\n  printf(\"Hello, World!\\n\");\n  return 0;\n}"
-      }
-    ]
+    "range": null,
+    "raw_content": null,
+    "return_type": null,
+    "signature": null,
+    "system": false,
+    "type": "UNKNOWN"
   },
   "cst": {
-    "type": "translation_unit",
-    "content": null,
-    "range": {
-      "start": {
-        "line": 0,
-        "column": 0
-      },
-      "end": {
-        "line": 22,
-        "column": 1
-      }
-    },
     "children": [
       {
-        "type": "comment",
+        "children": [],
         "content": "/**\n * @file hello_world.c\n * @brief A simple \"Hello, World!\" program in C\n *\n * This example demonstrates basic C syntax including:\n * - Comments\n * - Include directives\n * - Function declarations\n * - Function definitions\n * - Print statements\n */",
         "range": {
-          "start": {
-            "line": 1,
-            "column": 0
-          },
           "end": {
-            "line": 11,
-            "column": 3
+            "column": 3,
+            "line": 10
+          },
+          "start": {
+            "column": 0,
+            "line": 0
           }
         },
-        "children": []
+        "type": "comment"
       },
       {
-        "type": "preproc_include",
-        "content": "#include <stdio.h>",
-        "range": {
-          "start": {
-            "line": 13,
-            "column": 0
-          },
-          "end": {
-            "line": 13,
-            "column": 19
-          }
-        },
         "children": [
           {
-            "type": "system_lib_string",
-            "content": "stdio.h",
+            "children": [],
+            "content": "#include",
             "range": {
-              "start": {
-                "line": 13,
-                "column": 10
-              },
               "end": {
-                "line": 13,
-                "column": 18
+                "column": 8,
+                "line": 12
+              },
+              "start": {
+                "column": 0,
+                "line": 12
               }
             },
-            "children": []
+            "type": "#include"
+          },
+          {
+            "children": [],
+            "content": "<stdio.h>",
+            "range": {
+              "end": {
+                "column": 18,
+                "line": 12
+              },
+              "start": {
+                "column": 9,
+                "line": 12
+              }
+            },
+            "type": "system_lib_string"
           }
-        ]
+        ],
+        "content": "#include <stdio.h>\n",
+        "range": {
+          "end": {
+            "column": 0,
+            "line": 13
+          },
+          "start": {
+            "column": 0,
+            "line": 12
+          }
+        },
+        "type": "preproc_include"
       },
       {
-        "type": "comment",
+        "children": [],
         "content": "/**\n * @brief Program entry point\n * @return Exit status code\n */",
         "range": {
-          "start": {
-            "line": 15,
-            "column": 0
-          },
           "end": {
-            "line": 18,
-            "column": 3
+            "column": 3,
+            "line": 17
+          },
+          "start": {
+            "column": 0,
+            "line": 14
           }
         },
-        "children": []
+        "type": "comment"
       },
       {
-        "type": "function_definition",
-        "content": "int main() {\n  printf(\"Hello, World!\\n\");\n  return 0;\n}",
-        "range": {
-          "start": {
-            "line": 19,
-            "column": 0
-          },
-          "end": {
-            "line": 22,
-            "column": 1
-          }
-        },
         "children": [
           {
-            "type": "primitive_type",
+            "children": [],
             "content": "int",
             "range": {
-              "start": {
-                "line": 19,
-                "column": 0
-              },
               "end": {
-                "line": 19,
-                "column": 3
+                "column": 3,
+                "line": 18
+              },
+              "start": {
+                "column": 0,
+                "line": 18
               }
             },
-            "children": []
+            "type": "primitive_type"
           },
           {
-            "type": "function_declarator",
-            "content": "main()",
-            "range": {
-              "start": {
-                "line": 19,
-                "column": 4
-              },
-              "end": {
-                "line": 19,
-                "column": 10
-              }
-            },
             "children": [
               {
-                "type": "identifier",
+                "children": [],
                 "content": "main",
                 "range": {
-                  "start": {
-                    "line": 19,
-                    "column": 4
-                  },
                   "end": {
-                    "line": 19,
-                    "column": 8
+                    "column": 8,
+                    "line": 18
+                  },
+                  "start": {
+                    "column": 4,
+                    "line": 18
                   }
                 },
-                "children": []
+                "type": "identifier"
               },
               {
-                "type": "parameter_list",
+                "children": [
+                  {
+                    "children": [],
+                    "content": "(",
+                    "range": {
+                      "end": {
+                        "column": 9,
+                        "line": 18
+                      },
+                      "start": {
+                        "column": 8,
+                        "line": 18
+                      }
+                    },
+                    "type": "("
+                  },
+                  {
+                    "children": [],
+                    "content": ")",
+                    "range": {
+                      "end": {
+                        "column": 10,
+                        "line": 18
+                      },
+                      "start": {
+                        "column": 9,
+                        "line": 18
+                      }
+                    },
+                    "type": ")"
+                  }
+                ],
                 "content": "()",
                 "range": {
-                  "start": {
-                    "line": 19,
-                    "column": 8
-                  },
                   "end": {
-                    "line": 19,
-                    "column": 10
+                    "column": 10,
+                    "line": 18
+                  },
+                  "start": {
+                    "column": 8,
+                    "line": 18
                   }
                 },
-                "children": []
+                "type": "parameter_list"
               }
-            ]
-          },
-          {
-            "type": "compound_statement",
-            "content": "{\n  printf(\"Hello, World!\\n\");\n  return 0;\n}",
+            ],
+            "content": "main()",
             "range": {
-              "start": {
-                "line": 19,
-                "column": 11
-              },
               "end": {
-                "line": 22,
-                "column": 1
+                "column": 10,
+                "line": 18
+              },
+              "start": {
+                "column": 4,
+                "line": 18
               }
             },
+            "type": "function_declarator"
+          },
+          {
             "children": [
               {
-                "type": "expression_statement",
-                "content": "printf(\"Hello, World!\\n\");",
+                "children": [],
+                "content": "{",
                 "range": {
-                  "start": {
-                    "line": 20,
-                    "column": 2
-                  },
                   "end": {
-                    "line": 20,
-                    "column": 27
+                    "column": 12,
+                    "line": 18
+                  },
+                  "start": {
+                    "column": 11,
+                    "line": 18
                   }
                 },
-                "children": [
-                  {
-                    "type": "call_expression",
-                    "content": "printf(\"Hello, World!\\n\")",
-                    "range": {
-                      "start": {
-                        "line": 20,
-                        "column": 2
-                      },
-                      "end": {
-                        "line": 20,
-                        "column": 26
-                      }
-                    },
-                    "children": [
-                      {
-                        "type": "identifier",
-                        "content": "printf",
-                        "range": {
-                          "start": {
-                            "line": 20,
-                            "column": 2
-                          },
-                          "end": {
-                            "line": 20,
-                            "column": 8
-                          }
-                        },
-                        "children": []
-                      },
-                      {
-                        "type": "argument_list",
-                        "content": "(\"Hello, World!\\n\")",
-                        "range": {
-                          "start": {
-                            "line": 20,
-                            "column": 8
-                          },
-                          "end": {
-                            "line": 20,
-                            "column": 26
-                          }
-                        },
-                        "children": [
-                          {
-                            "type": "string_literal",
-                            "content": "\"Hello, World!\\n\"",
-                            "range": {
-                              "start": {
-                                "line": 20,
-                                "column": 9
-                              },
-                              "end": {
-                                "line": 20,
-                                "column": 25
-                              }
-                            },
-                            "children": []
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
+                "type": "{"
               },
               {
-                "type": "return_statement",
-                "content": "return 0;",
-                "range": {
-                  "start": {
-                    "line": 21,
-                    "column": 2
-                  },
-                  "end": {
-                    "line": 21,
-                    "column": 11
-                  }
-                },
                 "children": [
                   {
-                    "type": "number_literal",
-                    "content": "0",
-                    "range": {
-                      "start": {
-                        "line": 21,
-                        "column": 9
+                    "children": [
+                      {
+                        "children": [],
+                        "content": "printf",
+                        "range": {
+                          "end": {
+                            "column": 8,
+                            "line": 19
+                          },
+                          "start": {
+                            "column": 2,
+                            "line": 19
+                          }
+                        },
+                        "type": "identifier"
                       },
+                      {
+                        "children": [
+                          {
+                            "children": [],
+                            "content": "(",
+                            "range": {
+                              "end": {
+                                "column": 9,
+                                "line": 19
+                              },
+                              "start": {
+                                "column": 8,
+                                "line": 19
+                              }
+                            },
+                            "type": "("
+                          },
+                          {
+                            "children": [
+                              {
+                                "children": [],
+                                "content": "\"",
+                                "range": {
+                                  "end": {
+                                    "column": 10,
+                                    "line": 19
+                                  },
+                                  "start": {
+                                    "column": 9,
+                                    "line": 19
+                                  }
+                                },
+                                "type": "\""
+                              },
+                              {
+                                "children": [],
+                                "content": "Hello, World!",
+                                "range": {
+                                  "end": {
+                                    "column": 23,
+                                    "line": 19
+                                  },
+                                  "start": {
+                                    "column": 10,
+                                    "line": 19
+                                  }
+                                },
+                                "type": "string_content"
+                              },
+                              {
+                                "children": [],
+                                "content": "\\n",
+                                "range": {
+                                  "end": {
+                                    "column": 25,
+                                    "line": 19
+                                  },
+                                  "start": {
+                                    "column": 23,
+                                    "line": 19
+                                  }
+                                },
+                                "type": "escape_sequence"
+                              },
+                              {
+                                "children": [],
+                                "content": "\"",
+                                "range": {
+                                  "end": {
+                                    "column": 26,
+                                    "line": 19
+                                  },
+                                  "start": {
+                                    "column": 25,
+                                    "line": 19
+                                  }
+                                },
+                                "type": "\""
+                              }
+                            ],
+                            "content": "\"Hello, World!\\n\"",
+                            "range": {
+                              "end": {
+                                "column": 26,
+                                "line": 19
+                              },
+                              "start": {
+                                "column": 9,
+                                "line": 19
+                              }
+                            },
+                            "type": "string_literal"
+                          },
+                          {
+                            "children": [],
+                            "content": ")",
+                            "range": {
+                              "end": {
+                                "column": 27,
+                                "line": 19
+                              },
+                              "start": {
+                                "column": 26,
+                                "line": 19
+                              }
+                            },
+                            "type": ")"
+                          }
+                        ],
+                        "content": "(\"Hello, World!\\n\")",
+                        "range": {
+                          "end": {
+                            "column": 27,
+                            "line": 19
+                          },
+                          "start": {
+                            "column": 8,
+                            "line": 19
+                          }
+                        },
+                        "type": "argument_list"
+                      }
+                    ],
+                    "content": "printf(\"Hello, World!\\n\")",
+                    "range": {
                       "end": {
-                        "line": 21,
-                        "column": 10
+                        "column": 27,
+                        "line": 19
+                      },
+                      "start": {
+                        "column": 2,
+                        "line": 19
                       }
                     },
-                    "children": []
+                    "type": "call_expression"
+                  },
+                  {
+                    "children": [],
+                    "content": ";",
+                    "range": {
+                      "end": {
+                        "column": 28,
+                        "line": 19
+                      },
+                      "start": {
+                        "column": 27,
+                        "line": 19
+                      }
+                    },
+                    "type": ";"
                   }
-                ]
+                ],
+                "content": "printf(\"Hello, World!\\n\");",
+                "range": {
+                  "end": {
+                    "column": 28,
+                    "line": 19
+                  },
+                  "start": {
+                    "column": 2,
+                    "line": 19
+                  }
+                },
+                "type": "expression_statement"
+              },
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "content": "return",
+                    "range": {
+                      "end": {
+                        "column": 8,
+                        "line": 20
+                      },
+                      "start": {
+                        "column": 2,
+                        "line": 20
+                      }
+                    },
+                    "type": "return"
+                  },
+                  {
+                    "children": [],
+                    "content": "0",
+                    "range": {
+                      "end": {
+                        "column": 10,
+                        "line": 20
+                      },
+                      "start": {
+                        "column": 9,
+                        "line": 20
+                      }
+                    },
+                    "type": "number_literal"
+                  },
+                  {
+                    "children": [],
+                    "content": ";",
+                    "range": {
+                      "end": {
+                        "column": 11,
+                        "line": 20
+                      },
+                      "start": {
+                        "column": 10,
+                        "line": 20
+                      }
+                    },
+                    "type": ";"
+                  }
+                ],
+                "content": "return 0;",
+                "range": {
+                  "end": {
+                    "column": 11,
+                    "line": 20
+                  },
+                  "start": {
+                    "column": 2,
+                    "line": 20
+                  }
+                },
+                "type": "return_statement"
+              },
+              {
+                "children": [],
+                "content": "}",
+                "range": {
+                  "end": {
+                    "column": 1,
+                    "line": 21
+                  },
+                  "start": {
+                    "column": 0,
+                    "line": 21
+                  }
+                },
+                "type": "}"
               }
-            ]
+            ],
+            "content": "{\n  printf(\"Hello, World!\\n\");\n  return 0;\n}",
+            "range": {
+              "end": {
+                "column": 1,
+                "line": 21
+              },
+              "start": {
+                "column": 11,
+                "line": 18
+              }
+            },
+            "type": "compound_statement"
           }
-        ]
+        ],
+        "content": "int main() {\n  printf(\"Hello, World!\\n\");\n  return 0;\n}",
+        "range": {
+          "end": {
+            "column": 1,
+            "line": 21
+          },
+          "start": {
+            "column": 0,
+            "line": 18
+          }
+        },
+        "type": "function_definition"
       }
-    ]
-  }
+    ],
+    "content": "/**\n * @file hello_world.c\n * @brief A simple \"Hello, World!\" program in C\n *\n * This example demonstrates basic C syntax including:\n * - Comments\n * - Include directives\n * - Function declarations\n * - Function definitions\n * - Print statements\n */\n\n#include <stdio.h>\n\n/**\n * @brief Program entry point\n * @return Exit status code\n */\nint main() {\n  printf(\"Hello, World!\\n\");\n  return 0;\n}\n",
+    "range": {
+      "end": {
+        "column": 0,
+        "line": 22
+      },
+      "start": {
+        "column": 0,
+        "line": 0
+      }
+    },
+    "type": "translation_unit"
+  },
+  "language": null
 }

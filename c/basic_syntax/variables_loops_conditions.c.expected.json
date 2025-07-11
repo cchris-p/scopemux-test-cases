@@ -1,510 +1,564 @@
 {
-  "language": "C",
   "ast": {
-    "type": "ROOT",
-    "name": "ROOT",
-    "qualified_name": "variables_loops_conditions.c",
     "children": [
       {
-        "type": "DOCSTRING",
-        "name": "file_docstring",
-        "qualified_name": "variables_loops_conditions.c.file_docstring",
-        "docstring": "@file variables_loops_conditions.c\n@brief Demonstration of variables, loops, and conditional statements in C\n\nThis example shows:\n- Various variable declarations and types\n- for, while, and do-while loops\n- if, else if, else conditions\n- switch statements",
-        "range": {
-          "start_line": 1,
-          "start_column": 0,
-          "end_line": 10,
-          "end_column": 3
-        },
-        "raw_content": "/**\n * @file variables_loops_conditions.c\n * @brief Demonstration of variables, loops, and conditional statements in C\n *\n * This example shows:\n * - Various variable declarations and types\n * - for, while, and do-while loops\n * - if, else if, else conditions\n * - switch statements\n */"
+        "children": [],
+        "content": "/**\n * @file variables_loops_conditions.c\n * @brief Demonstration of variables, loops, and conditional statements in C\n *\n * This example shows:\n * - Various variable declarations and types\n * - for, while, and do-while loops\n * - if, else if, else conditions\n * - switch statements\n */",
+        "end_column": 3,
+        "end_line": 10,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 1,
+        "type": "DOCSTRING"
       },
       {
-        "type": "INCLUDE",
-        "name": "stdbool_include",
-        "qualified_name": "variables_loops_conditions.c.stdbool_include",
-        "path": "stdbool.h",
-        "system": true,
-        "range": {
-          "start_line": 12,
-          "start_column": 0,
-          "end_line": 12,
-          "end_column": 22
-        },
-        "raw_content": "#include <stdbool.h>"
+        "children": [],
+        "content": "#include <stdbool.h>",
+        "end_column": 20,
+        "end_line": 12,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 12,
+        "type": "COMMENT"
       },
       {
-        "type": "INCLUDE",
-        "name": "stdio_include",
-        "qualified_name": "variables_loops_conditions.c.stdio_include",
-        "path": "stdio.h",
-        "system": true,
-        "range": {
-          "start_line": 13,
-          "start_column": 0,
-          "end_line": 13,
-          "end_column": 19
-        },
-        "raw_content": "#include <stdio.h>"
+        "children": [],
+        "content": "#include <stdio.h>",
+        "end_column": 18,
+        "end_line": 13,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 13,
+        "type": "COMMENT"
       },
       {
-        "type": "INCLUDE",
-        "name": "stdlib_include",
-        "qualified_name": "variables_loops_conditions.c.stdlib_include",
-        "path": "stdlib.h",
-        "system": true,
-        "range": {
-          "start_line": 14,
-          "start_column": 0,
-          "end_line": 14,
-          "end_column": 20
-        },
-        "raw_content": "#include <stdlib.h>"
+        "children": [],
+        "content": "#include <stdlib.h>",
+        "end_column": 19,
+        "end_line": 14,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 14,
+        "type": "COMMENT"
       },
       {
-        "type": "FUNCTION",
+        "children": [],
+        "content": "/**\n * @brief Program entry point\n * @return Exit status code\n */",
+        "end_column": 3,
+        "end_line": 19,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 16,
+        "type": "DOCSTRING"
+      },
+      {
+        "children": [],
+        "content": "// Variable declarations",
+        "end_column": 24,
+        "end_line": 21,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 21,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// For loop",
+        "end_column": 11,
+        "end_line": 29,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 29,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// While loop",
+        "end_column": 13,
+        "end_line": 35,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 35,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Do-while loop",
+        "end_column": 16,
+        "end_line": 43,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 43,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// If-else statements",
+        "end_column": 21,
+        "end_line": 51,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 51,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// If-else if-else",
+        "end_column": 18,
+        "end_line": 59,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 59,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Switch statement",
+        "end_column": 19,
+        "end_line": 69,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 69,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "end_column": 1,
+        "end_line": 524,
         "name": "main",
-        "qualified_name": "variables_loops_conditions.c.main",
-        "signature": "int main()",
-        "return_type": "int",
-        "parameters": [],
-        "docstring": "@brief Program entry point\n@return Exit status code",
-        "range": {
-          "start_line": 20,
-          "start_column": 0,
-          "end_line": 84,
-          "end_column": 1
-        },
-        "raw_content": "int main() {\n  // Variable declarations\n  int i = 0;\n  float f = 3.14f;\n  double d = 2.71828;\n  char c = 'A';\n  bool b = true;\n  int array[5] = {1, 2, 3, 4, 5};\n\n  // For loop\n  printf(\"For loop example:\\n\");\n  for (i = 0; i < 5; i++) {\n    printf(\"array[%d] = %d\\n\", i, array[i]);\n  }\n\n  // While loop\n  printf(\"\\nWhile loop example:\\n\");\n  i = 0;\n  while (i < 5) {\n    printf(\"iteration %d\\n\", i);\n    i++;\n  }\n\n  // Do-while loop\n  printf(\"\\nDo-while loop example:\\n\");\n  i = 0;\n  do {\n    printf(\"iteration %d\\n\", i);\n    i++;\n  } while (i < 5);\n\n  // If-else statements\n  printf(\"\\nIf-else example:\\n\");\n  if (b) {\n    printf(\"b is true\\n\");\n  } else {\n    printf(\"b is false\\n\");\n  }\n\n  // If-else if-else\n  printf(\"\\nIf-else if-else example:\\n\");\n  if (i < 3) {\n    printf(\"i is less than 3\\n\");\n  } else if (i == 5) {\n    printf(\"i is equal to 5\\n\");\n  } else {\n    printf(\"i is greater than 5\\n\");\n  }\n\n  // Switch statement\n  printf(\"\\nSwitch example:\\n\");\n  switch (c) {\n  case 'A':\n    printf(\"c is 'A'\\n\");\n    break;\n  case 'B':\n    printf(\"c is 'B'\\n\");\n    break;\n  default:\n    printf(\"c is not 'A' or 'B'\\n\");\n    break;\n  }\n\n  return 0;\n}",
-        "children": [
-          {
-            "type": "VARIABLE_DECLARATION",
-            "name": "i",
-            "qualified_name": "variables_loops_conditions.c.main.i",
-            "var_type": "int",
-            "range": {
-              "start_line": 22,
-              "start_column": 2,
-              "end_line": 22,
-              "end_column": 11
-            },
-            "raw_content": "int i = 0;"
-          },
-          {
-            "type": "VARIABLE_DECLARATION",
-            "name": "f",
-            "qualified_name": "variables_loops_conditions.c.main.f",
-            "var_type": "float",
-            "range": {
-              "start_line": 23,
-              "start_column": 2,
-              "end_line": 23,
-              "end_column": 17
-            },
-            "raw_content": "float f = 3.14f;"
-          },
-          {
-            "type": "VARIABLE_DECLARATION",
-            "name": "d",
-            "qualified_name": "variables_loops_conditions.c.main.d",
-            "var_type": "double",
-            "range": {
-              "start_line": 24,
-              "start_column": 2,
-              "end_line": 24,
-              "end_column": 20
-            },
-            "raw_content": "double d = 2.71828;"
-          },
-          {
-            "type": "VARIABLE_DECLARATION",
-            "name": "c",
-            "qualified_name": "variables_loops_conditions.c.main.c",
-            "var_type": "char",
-            "range": {
-              "start_line": 25,
-              "start_column": 2,
-              "end_line": 25,
-              "end_column": 14
-            },
-            "raw_content": "char c = 'A';"
-          },
-          {
-            "type": "VARIABLE_DECLARATION",
-            "name": "b",
-            "qualified_name": "variables_loops_conditions.c.main.b",
-            "var_type": "bool",
-            "range": {
-              "start_line": 26,
-              "start_column": 2,
-              "end_line": 26,
-              "end_column": 15
-            },
-            "raw_content": "bool b = true;"
-          },
-          {
-            "type": "VARIABLE_DECLARATION",
-            "name": "array",
-            "qualified_name": "variables_loops_conditions.c.main.array",
-            "var_type": "int[]",
-            "range": {
-              "start_line": 27,
-              "start_column": 2,
-              "end_line": 27,
-              "end_column": 31
-            },
-            "raw_content": "int array[5] = {1, 2, 3, 4, 5};"
-          },
-          {
-            "type": "FOR_STATEMENT",
-            "name": "for_loop",
-            "qualified_name": "variables_loops_conditions.c.main.for_loop",
-            "range": {
-              "start_line": 31,
-              "start_column": 2,
-              "end_line": 33,
-              "end_column": 3
-            },
-            "raw_content": "for (i = 0; i < 5; i++) {\n    printf(\"array[%d] = %d\\n\", i, array[i]);\n  }"
-          },
-          {
-            "type": "WHILE_STATEMENT",
-            "name": "while_loop",
-            "qualified_name": "variables_loops_conditions.c.main.while_loop",
-            "range": {
-              "start_line": 38,
-              "start_column": 2,
-              "end_line": 41,
-              "end_column": 3
-            },
-            "raw_content": "while (i < 5) {\n    printf(\"iteration %d\\n\", i);\n    i++;\n  }"
-          },
-          {
-            "type": "DO_WHILE_STATEMENT",
-            "name": "do_while_loop",
-            "qualified_name": "variables_loops_conditions.c.main.do_while_loop",
-            "range": {
-              "start_line": 46,
-              "start_column": 2,
-              "end_line": 49,
-              "end_column": 16
-            },
-            "raw_content": "do {\n    printf(\"iteration %d\\n\", i);\n    i++;\n  } while (i < 5);"
-          },
-          {
-            "type": "IF_STATEMENT",
-            "name": "if_else_statement",
-            "qualified_name": "variables_loops_conditions.c.main.if_else_statement",
-            "range": {
-              "start_line": 53,
-              "start_column": 2,
-              "end_line": 57,
-              "end_column": 3
-            },
-            "raw_content": "if (b) {\n    printf(\"b is true\\n\");\n  } else {\n    printf(\"b is false\\n\");\n  }"
-          },
-          {
-            "type": "IF_STATEMENT",
-            "name": "if_else_if_statement",
-            "qualified_name": "variables_loops_conditions.c.main.if_else_if_statement",
-            "range": {
-              "start_line": 61,
-              "start_column": 2,
-              "end_line": 67,
-              "end_column": 3
-            },
-            "raw_content": "if (i < 3) {\n    printf(\"i is less than 3\\n\");\n  } else if (i == 5) {\n    printf(\"i is equal to 5\\n\");\n  } else {\n    printf(\"i is greater than 5\\n\");\n  }"
-          },
-          {
-            "type": "SWITCH_STATEMENT",
-            "name": "switch_statement",
-            "qualified_name": "variables_loops_conditions.c.main.switch_statement",
-            "range": {
-              "start_line": 71,
-              "start_column": 2,
-              "end_line": 81,
-              "end_column": 3
-            },
-            "raw_content": "switch (c) {\n  case 'A':\n    printf(\"c is 'A'\\n\");\n    break;\n  case 'B':\n    printf(\"c is 'B'\\n\");\n    break;\n  default:\n    printf(\"c is not 'A' or 'B'\\n\");\n    break;\n  }"
-          }
-        ]
+        "qualified_name": "main",
+        "start_column": 1,
+        "start_line": 139,
+        "type": "FUNCTION"
       }
-    ]
+    ],
+    "end_column": 1,
+    "end_line": 84,
+    "name": "variables_loops_conditions.c",
+    "qualified_name": "variables_loops_conditions.c",
+    "start_column": 1,
+    "start_line": 1,
+    "type": "ROOT"
   },
   "cst": {
-    "type": "translation_unit",
-    "content": null,
-    "range": {
-      "start": {
-        "line": 0,
-        "column": 0
-      },
-      "end": {
-        "line": 84,
-        "column": 1
-      }
-    },
     "children": [
       {
-        "type": "comment",
-        "content": "/**\n * @file variables_loops_conditions.c\n * @brief Demonstration of variables, loops, and conditional statements in C\n *\n * This example shows:\n * - Various variable declarations and types\n * - for, while, and do-while loops\n * - if, else if, else conditions\n * - switch statements\n */",
-        "range": {
-          "start": {
-            "line": 1,
-            "column": 0
-          },
-          "end": {
-            "line": 10,
-            "column": 3
-          }
-        },
-        "children": []
+        "children": [],
+        "end_column": 20,
+        "end_line": 12,
+        "start_column": 1,
+        "start_line": 12,
+        "text": "#include <stdbool.h>",
+        "type": "include_directive"
       },
       {
-        "type": "preproc_include",
-        "content": "#include <stdbool.h>",
-        "range": {
-          "start": {
-            "line": 12,
-            "column": 0
-          },
-          "end": {
-            "line": 12,
-            "column": 22
-          }
-        },
+        "children": [],
+        "end_column": 18,
+        "end_line": 13,
+        "start_column": 1,
+        "start_line": 13,
+        "text": "#include <stdio.h>",
+        "type": "include_directive"
+      },
+      {
+        "children": [],
+        "end_column": 19,
+        "end_line": 14,
+        "start_column": 1,
+        "start_line": 14,
+        "text": "#include <stdlib.h>",
+        "type": "include_directive"
+      },
+      {
         "children": [
           {
-            "type": "system_lib_string",
-            "content": "stdbool.h",
-            "range": {
-              "start": {
-                "line": 12,
-                "column": 10
-              },
-              "end": {
-                "line": 12,
-                "column": 21
-              }
-            },
-            "children": []
+            "children": [],
+            "text": "// Variable declarations",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "int i = 0;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "float f = 3.14f;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "double d = 2.71828;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "char c = 'A';",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "bool b = true;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "int array[5] = {1, 2, 3, 4, 5};",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "// For loop",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"For loop example:\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "for (i = 0; i < 5; i++) {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"array[%d] = %d\\n\", i, array[i]);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "}",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "// While loop",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"\\nWhile loop example:\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "i = 0;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "while (i < 5) {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"iteration %d\\n\", i);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "i++;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "}",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "// Do-while loop",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"\\nDo-while loop example:\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "i = 0;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "do {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"iteration %d\\n\", i);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "i++;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "} while (i < 5);",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "// If-else statements",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"\\nIf-else example:\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "if (b) {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"b is true\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "} else {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"b is false\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "}",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "// If-else if-else",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"\\nIf-else if-else example:\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "if (i < 3) {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"i is less than 3\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "} else if (i == 5) {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"i is equal to 5\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "} else {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"i is greater than 5\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "}",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "// Switch statement",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"\\nSwitch example:\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "switch (c) {",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "case 'A':",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"c is 'A'\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "break;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "case 'B':",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"c is 'B'\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "break;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "default:",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"c is not 'A' or 'B'\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "break;",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "}",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "return 0;",
+            "type": "statement"
           }
-        ]
+        ],
+        "end_column": 1,
+        "end_line": 84,
+        "name": "main",
+        "start_column": 1,
+        "start_line": 20,
+        "text": "int main() {\n  // Variable declarations\n  int i = 0;\n  float f = 3.14f;\n  double d = 2.71828;\n  char c = 'A';\n  bool b = true;\n  int array[5] = {1, 2, 3, 4, 5};\n\n  // For loop\n  printf(\"For loop example:\\n\");\n  for (i = 0; i < 5; i++) {\n    printf(\"array[%d] = %d\\n\", i, array[i]);\n  }\n\n  // While loop\n  printf(\"\\nWhile loop example:\\n\");\n  i = 0;\n  while (i < 5) {\n    printf(\"iteration %d\\n\", i);\n    i++;\n  }\n\n  // Do-while loop\n  printf(\"\\nDo-while loop example:\\n\");\n  i = 0;\n  do {\n    printf(\"iteration %d\\n\", i);\n    i++;\n  } while (i < 5);\n\n  // If-else statements\n  printf(\"\\nIf-else example:\\n\");\n  if (b) {\n    printf(\"b is true\\n\");\n  } else {\n    printf(\"b is false\\n\");\n  }\n\n  // If-else if-else\n  printf(\"\\nIf-else if-else example:\\n\");\n  if (i < 3) {\n    printf(\"i is less than 3\\n\");\n  } else if (i == 5) {\n    printf(\"i is equal to 5\\n\");\n  } else {\n    printf(\"i is greater than 5\\n\");\n  }\n\n  // Switch statement\n  printf(\"\\nSwitch example:\\n\");\n  switch (c) {\n  case 'A':\n    printf(\"c is 'A'\\n\");\n    break;\n  case 'B':\n    printf(\"c is 'B'\\n\");\n    break;\n  default:\n    printf(\"c is not 'A' or 'B'\\n\");\n    break;\n  }\n\n  return 0;\n}",
+        "type": "function_definition"
       },
       {
-        "type": "preproc_include",
-        "content": "#include <stdio.h>",
-        "range": {
-          "start": {
-            "line": 13,
-            "column": 0
-          },
-          "end": {
-            "line": 13,
-            "column": 19
-          }
-        },
-        "children": [
-          {
-            "type": "system_lib_string",
-            "content": "stdio.h",
-            "range": {
-              "start": {
-                "line": 13,
-                "column": 10
-              },
-              "end": {
-                "line": 13,
-                "column": 18
-              }
-            },
-            "children": []
-          }
-        ]
+        "children": [],
+        "end_column": 3,
+        "end_line": 10,
+        "start_column": 1,
+        "start_line": 1,
+        "text": "/**\n * @file variables_loops_conditions.c\n * @brief Demonstration of variables, loops, and conditional statements in C\n *\n * This example shows:\n * - Various variable declarations and types\n * - for, while, and do-while loops\n * - if, else if, else conditions\n * - switch statements\n */",
+        "type": "comment"
       },
       {
-        "type": "preproc_include",
-        "content": "#include <stdlib.h>",
-        "range": {
-          "start": {
-            "line": 14,
-            "column": 0
-          },
-          "end": {
-            "line": 14,
-            "column": 20
-          }
-        },
-        "children": [
-          {
-            "type": "system_lib_string",
-            "content": "stdlib.h",
-            "range": {
-              "start": {
-                "line": 14,
-                "column": 10
-              },
-              "end": {
-                "line": 14,
-                "column": 19
-              }
-            },
-            "children": []
-          }
-        ]
+        "children": [],
+        "end_column": 3,
+        "end_line": 19,
+        "start_column": 1,
+        "start_line": 16,
+        "text": "/**\n * @brief Program entry point\n * @return Exit status code\n */",
+        "type": "comment"
       },
       {
-        "type": "comment",
-        "content": "/**\n * @brief Program entry point\n * @return Exit status code\n */",
-        "range": {
-          "start": {
-            "line": 16,
-            "column": 0
-          },
-          "end": {
-            "line": 19,
-            "column": 3
-          }
-        },
-        "children": []
+        "children": [],
+        "end_column": 24,
+        "end_line": 21,
+        "start_column": 1,
+        "start_line": 21,
+        "text": "// Variable declarations",
+        "type": "comment"
       },
       {
-        "type": "function_definition",
-        "content": "int main() {\n  // Variable declarations\n  int i = 0;\n  float f = 3.14f;\n  double d = 2.71828;\n  char c = 'A';\n  bool b = true;\n  int array[5] = {1, 2, 3, 4, 5};\n\n  // For loop\n  printf(\"For loop example:\\n\");\n  for (i = 0; i < 5; i++) {\n    printf(\"array[%d] = %d\\n\", i, array[i]);\n  }\n\n  // While loop\n  printf(\"\\nWhile loop example:\\n\");\n  i = 0;\n  while (i < 5) {\n    printf(\"iteration %d\\n\", i);\n    i++;\n  }\n\n  // Do-while loop\n  printf(\"\\nDo-while loop example:\\n\");\n  i = 0;\n  do {\n    printf(\"iteration %d\\n\", i);\n    i++;\n  } while (i < 5);\n\n  // If-else statements\n  printf(\"\\nIf-else example:\\n\");\n  if (b) {\n    printf(\"b is true\\n\");\n  } else {\n    printf(\"b is false\\n\");\n  }\n\n  // If-else if-else\n  printf(\"\\nIf-else if-else example:\\n\");\n  if (i < 3) {\n    printf(\"i is less than 3\\n\");\n  } else if (i == 5) {\n    printf(\"i is equal to 5\\n\");\n  } else {\n    printf(\"i is greater than 5\\n\");\n  }\n\n  // Switch statement\n  printf(\"\\nSwitch example:\\n\");\n  switch (c) {\n  case 'A':\n    printf(\"c is 'A'\\n\");\n    break;\n  case 'B':\n    printf(\"c is 'B'\\n\");\n    break;\n  default:\n    printf(\"c is not 'A' or 'B'\\n\");\n    break;\n  }\n\n  return 0;\n}",
-        "range": {
-          "start": {
-            "line": 20,
-            "column": 0
-          },
-          "end": {
-            "line": 84,
-            "column": 1
-          }
-        },
-        "children": [
-          {
-            "type": "primitive_type",
-            "content": "int",
-            "range": {
-              "start": {
-                "line": 20,
-                "column": 0
-              },
-              "end": {
-                "line": 20,
-                "column": 3
-              }
-            },
-            "children": []
-          },
-          {
-            "type": "function_declarator",
-            "content": "main()",
-            "range": {
-              "start": {
-                "line": 20,
-                "column": 4
-              },
-              "end": {
-                "line": 20,
-                "column": 10
-              }
-            },
-            "children": [
-              {
-                "type": "identifier",
-                "content": "main",
-                "range": {
-                  "start": {
-                    "line": 20,
-                    "column": 4
-                  },
-                  "end": {
-                    "line": 20,
-                    "column": 8
-                  }
-                },
-                "children": []
-              },
-              {
-                "type": "parameter_list",
-                "content": "()",
-                "range": {
-                  "start": {
-                    "line": 20,
-                    "column": 8
-                  },
-                  "end": {
-                    "line": 20,
-                    "column": 10
-                  }
-                },
-                "children": []
-              }
-            ]
-          },
-          {
-            "type": "compound_statement",
-            "content": "{\n  // Variable declarations\n  int i = 0;\n  float f = 3.14f;\n  double d = 2.71828;\n  char c = 'A';\n  bool b = true;\n  int array[5] = {1, 2, 3, 4, 5};\n\n  // For loop\n  printf(\"For loop example:\\n\");\n  for (i = 0; i < 5; i++) {\n    printf(\"array[%d] = %d\\n\", i, array[i]);\n  }\n\n  // While loop\n  printf(\"\\nWhile loop example:\\n\");\n  i = 0;\n  while (i < 5) {\n    printf(\"iteration %d\\n\", i);\n    i++;\n  }\n\n  // Do-while loop\n  printf(\"\\nDo-while loop example:\\n\");\n  i = 0;\n  do {\n    printf(\"iteration %d\\n\", i);\n    i++;\n  } while (i < 5);\n\n  // If-else statements\n  printf(\"\\nIf-else example:\\n\");\n  if (b) {\n    printf(\"b is true\\n\");\n  } else {\n    printf(\"b is false\\n\");\n  }\n\n  // If-else if-else\n  printf(\"\\nIf-else if-else example:\\n\");\n  if (i < 3) {\n    printf(\"i is less than 3\\n\");\n  } else if (i == 5) {\n    printf(\"i is equal to 5\\n\");\n  } else {\n    printf(\"i is greater than 5\\n\");\n  }\n\n  // Switch statement\n  printf(\"\\nSwitch example:\\n\");\n  switch (c) {\n  case 'A':\n    printf(\"c is 'A'\\n\");\n    break;\n  case 'B':\n    printf(\"c is 'B'\\n\");\n    break;\n  default:\n    printf(\"c is not 'A' or 'B'\\n\");\n    break;\n  }\n\n  return 0;\n}",
-            "range": {
-              "start": {
-                "line": 20,
-                "column": 11
-              },
-              "end": {
-                "line": 84,
-                "column": 1
-              }
-            },
-            "children": [
-              {
-                "type": "comment",
-                "content": "// Variable declarations",
-                "range": {
-                  "start": {
-                    "line": 21,
-                    "column": 2
-                  },
-                  "end": {
-                    "line": 21,
-                    "column": 25
-                  }
-                },
-                "children": []
-              },
-              {
-                "type": "variable_declarations",
-                "content": "int i = 0;",
-                "range": {
-                  "start": {
-                    "line": 22,
-                    "column": 2
-                  },
-                  "end": {
-                    "line": 22,
-                    "column": 11
-                  }
-                },
-                "children": []
-              },
-              {
-                "type": "variable_declarations",
-                "content": "float f = 3.14f;",
-                "range": {
-                  "start": {
-                    "line": 23,
-                    "column": 2
-                  },
-                  "end": {
-                    "line": 23,
-                    "column": 17
-                  }
-                },
-                "children": []
-              }
-            ]
-          }
-        ]
+        "children": [],
+        "end_column": 11,
+        "end_line": 29,
+        "start_column": 1,
+        "start_line": 29,
+        "text": "// For loop",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 13,
+        "end_line": 35,
+        "start_column": 1,
+        "start_line": 35,
+        "text": "// While loop",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 16,
+        "end_line": 43,
+        "start_column": 1,
+        "start_line": 43,
+        "text": "// Do-while loop",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 21,
+        "end_line": 51,
+        "start_column": 1,
+        "start_line": 51,
+        "text": "// If-else statements",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 18,
+        "end_line": 59,
+        "start_column": 1,
+        "start_line": 59,
+        "text": "// If-else if-else",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 19,
+        "end_line": 69,
+        "start_column": 1,
+        "start_line": 69,
+        "text": "// Switch statement",
+        "type": "comment"
       }
-    ]
-  }
+    ],
+    "end_column": 1,
+    "end_line": 84,
+    "start_column": 1,
+    "start_line": 1,
+    "type": "translation_unit"
+  },
+  "language": "C"
 }

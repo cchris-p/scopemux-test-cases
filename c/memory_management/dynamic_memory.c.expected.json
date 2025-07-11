@@ -1,424 +1,1490 @@
 {
-  "language": "C",
   "ast": {
-    "type": "translation_unit",
-    "functions": [
+    "children": [
       {
-        "name": "demonstrate_malloc",
-        "type": "function_definition",
-        "parameters": [],
-        "return_type": "void",
-        "body_range": {
-          "start_line": 17,
-          "start_column": 0,
-          "end_line": 45,
-          "end_column": 1
-        },
-        "docstring": "Basic dynamic memory allocation with malloc"
+        "children": [],
+        "content": "/**\n * Demonstration of C Memory Management\n *\n * This example covers:\n * - Dynamic memory allocation (malloc, calloc, realloc, free)\n * - Memory manipulation functions (memcpy, memmove, memset)\n * - Pointer arithmetic\n * - Memory safety considerations\n * - Custom memory allocation patterns\n */",
+        "end_column": 3,
+        "end_line": 10,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 1,
+        "type": "DOCSTRING"
       },
       {
-        "name": "demonstrate_calloc",
-        "type": "function_definition",
-        "parameters": [],
-        "return_type": "void",
-        "body_range": {
-          "start_line": 50,
-          "start_column": 0,
-          "end_line": 82,
-          "end_column": 1
-        },
-        "docstring": "Using calloc for zero-initialized memory"
+        "children": [],
+        "content": "#include <stdio.h>",
+        "end_column": 18,
+        "end_line": 12,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 12,
+        "type": "COMMENT"
       },
       {
-        "name": "demonstrate_realloc",
-        "type": "function_definition",
-        "parameters": [],
-        "return_type": "void",
-        "body_range": {
-          "start_line": 87,
-          "start_column": 0,
-          "end_line": 146,
-          "end_column": 1
-        },
-        "docstring": "Using realloc to resize allocated memory"
+        "children": [],
+        "content": "#include <stdlib.h>",
+        "end_column": 19,
+        "end_line": 13,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 13,
+        "type": "COMMENT"
       },
       {
-        "name": "demonstrate_pointer_arithmetic",
-        "type": "function_definition",
-        "parameters": [],
-        "return_type": "void",
-        "body_range": {
-          "start_line": 151,
-          "start_column": 0,
-          "end_line": 193,
-          "end_column": 1
-        },
-        "docstring": "Demonstrate pointer arithmetic and memory access"
+        "children": [],
+        "content": "#include <string.h>",
+        "end_column": 19,
+        "end_line": 14,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 14,
+        "type": "COMMENT"
       },
       {
-        "name": "demonstrate_memory_functions",
-        "type": "function_definition",
-        "parameters": [],
-        "return_type": "void",
-        "body_range": {
-          "start_line": 198,
-          "start_column": 0,
-          "end_line": 249,
-          "end_column": 1
-        },
-        "docstring": "Demonstrate memory manipulation functions"
+        "children": [],
+        "content": "#include <assert.h>",
+        "end_column": 19,
+        "end_line": 15,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 15,
+        "type": "COMMENT"
       },
       {
-        "name": "demonstrate_memory_leaks",
-        "type": "function_definition",
-        "parameters": [],
-        "return_type": "void",
-        "body_range": {
-          "start_line": 254,
-          "start_column": 0,
-          "end_line": 291,
-          "end_column": 1
-        },
-        "docstring": "Demonstrate a common pitfall: memory leaks"
+        "children": [],
+        "content": "/**\n * Basic dynamic memory allocation with malloc\n */",
+        "end_column": 3,
+        "end_line": 19,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 17,
+        "type": "DOCSTRING"
       },
       {
-        "name": "pool_alloc",
-        "type": "function_definition",
-        "parameters": [
-          {"name": "size", "type": "size_t"}
-        ],
-        "return_type": "void*",
-        "body_range": {
-          "start_line": 299,
-          "start_column": 0,
-          "end_line": 311,
-          "end_column": 1
-        },
-        "docstring": "Simple memory pool allocator"
+        "children": [],
+        "content": "// Allocate memory for 5 integers",
+        "end_column": 33,
+        "end_line": 23,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 23,
+        "type": "COMMENT"
       },
       {
-        "name": "pool_reset",
-        "type": "function_definition",
-        "parameters": [],
-        "return_type": "void",
-        "body_range": {
-          "start_line": 313,
-          "start_column": 0,
-          "end_line": 315,
-          "end_column": 1
-        },
-        "docstring": "Reset the memory pool"
+        "children": [],
+        "content": "// Check if allocation was successful",
+        "end_column": 37,
+        "end_line": 26,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 26,
+        "type": "COMMENT"
       },
       {
-        "name": "demonstrate_memory_pool",
-        "type": "function_definition",
-        "parameters": [],
-        "return_type": "void",
-        "body_range": {
-          "start_line": 317,
-          "start_column": 0,
-          "end_line": 358,
-          "end_column": 1
-        },
-        "docstring": "Demonstrate a simple custom memory pool"
+        "children": [],
+        "content": "// Initialize the allocated memory",
+        "end_column": 34,
+        "end_line": 32,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 32,
+        "type": "COMMENT"
       },
       {
-        "name": "demonstrate_multidimensional_arrays",
-        "type": "function_definition",
-        "parameters": [],
-        "return_type": "void",
-        "body_range": {
-          "start_line": 363,
-          "start_column": 0,
-          "end_line": 431,
-          "end_column": 1
-        },
-        "docstring": "Demonstrate handling of multi-dimensional arrays with dynamic allocation"
+        "children": [],
+        "content": "// Use the allocated memory",
+        "end_column": 27,
+        "end_line": 37,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 37,
+        "type": "COMMENT"
       },
       {
+        "children": [],
+        "content": "// Free the allocated memory",
+        "end_column": 28,
+        "end_line": 44,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 44,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Trying to use freed memory would cause undefined behavior",
+        "end_column": 60,
+        "end_line": 48,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 48,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// numbers[0] = 100; // This would be a bug!",
+        "end_column": 44,
+        "end_line": 49,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 49,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "/**\n * Using calloc for zero-initialized memory\n */",
+        "end_column": 3,
+        "end_line": 54,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 52,
+        "type": "DOCSTRING"
+      },
+      {
+        "children": [],
+        "content": "// Allocate and zero-initialize memory for 5 integers",
+        "end_column": 53,
+        "end_line": 58,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 58,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// calloc initializes memory to zero",
+        "end_column": 36,
+        "end_line": 66,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 66,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Now assign some values",
+        "end_column": 25,
+        "end_line": 73,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 73,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Free the allocated memory",
+        "end_column": 28,
+        "end_line": 84,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 84,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "/**\n * Using realloc to resize allocated memory\n */",
+        "end_column": 3,
+        "end_line": 91,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 89,
+        "type": "DOCSTRING"
+      },
+      {
+        "children": [],
+        "content": "// Start with a small array",
+        "end_column": 27,
+        "end_line": 95,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 95,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Initialize the array",
+        "end_column": 23,
+        "end_line": 103,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 103,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Resize the array to hold 5 integers",
+        "end_column": 38,
+        "end_line": 114,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 114,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// The original data is preserved; realloc copied it for us",
+        "end_column": 59,
+        "end_line": 123,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 123,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Initialize the new elements",
+        "end_column": 30,
+        "end_line": 126,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 126,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Shrink the array",
+        "end_column": 19,
+        "end_line": 136,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 136,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Free the memory",
+        "end_column": 18,
+        "end_line": 153,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 153,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "/**\n * Demonstrate pointer arithmetic and memory access\n */",
+        "end_column": 3,
+        "end_line": 160,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 158,
+        "type": "DOCSTRING"
+      },
+      {
+        "children": [],
+        "content": "// Allocate an array of 5 integers",
+        "end_column": 34,
+        "end_line": 164,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 164,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Initialize array",
+        "end_column": 19,
+        "end_line": 172,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 172,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Basic array indexing",
+        "end_column": 23,
+        "end_line": 177,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 177,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Equivalent pointer arithmetic",
+        "end_column": 32,
+        "end_line": 180,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 180,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Moving the pointer (unsafe, must keep track of original pointer for freeing)",
+        "end_column": 79,
+        "end_line": 183,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 183,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Move pointer to next element",
+        "end_column": 31,
+        "end_line": 187,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 187,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Move pointer by an offset",
+        "end_column": 28,
+        "end_line": 191,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 191,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Difference between pointers",
+        "end_column": 30,
+        "end_line": 195,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 195,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Free the original pointer, not the moved one",
+        "end_column": 47,
+        "end_line": 200,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 200,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "/**\n * Demonstrate memory manipulation functions\n */",
+        "end_column": 3,
+        "end_line": 209,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 207,
+        "type": "DOCSTRING"
+      },
+      {
+        "children": [],
+        "content": "// Allocate memory",
+        "end_column": 18,
+        "end_line": 213,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 213,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// memset: Fill memory with a specific byte",
+        "end_column": 43,
+        "end_line": 224,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 224,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// memcpy: Copy non-overlapping memory",
+        "end_column": 38,
+        "end_line": 229,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 229,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// memmove: Safe for overlapping regions",
+        "end_column": 40,
+        "end_line": 234,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 234,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Move \"defghi\" to position starting at \"bcdef\"",
+        "end_column": 48,
+        "end_line": 238,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 238,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// memcmp: Compare memory regions",
+        "end_column": 33,
+        "end_line": 242,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 242,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Clean up",
+        "end_column": 11,
+        "end_line": 253,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 253,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "/**\n * Demonstrate a common pitfall: memory leaks\n */",
+        "end_column": 3,
+        "end_line": 262,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 260,
+        "type": "DOCSTRING"
+      },
+      {
+        "children": [],
+        "content": "// Allocate memory",
+        "end_column": 18,
+        "end_line": 266,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 266,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Example of code paths that might cause leaks",
+        "end_column": 47,
+        "end_line": 276,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 276,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Nested allocations make leak tracking harder",
+        "end_column": 47,
+        "end_line": 284,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 284,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Proper cleanup",
+        "end_column": 17,
+        "end_line": 295,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 295,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "/**\n * Demonstrate a simple custom memory pool\n */",
+        "end_column": 3,
+        "end_line": 306,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 304,
+        "type": "DOCSTRING"
+      },
+      {
+        "children": [],
+        "content": "#define POOL_SIZE 1024",
+        "end_column": 22,
+        "end_line": 307,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 307,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Simple bump allocator",
+        "end_column": 24,
+        "end_line": 312,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 312,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Ensure alignment (simplified)",
+        "end_column": 32,
+        "end_line": 320,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 320,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Reset the pool to start fresh",
+        "end_column": 32,
+        "end_line": 333,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 333,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Allocate some memory from the pool",
+        "end_column": 37,
+        "end_line": 336,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 336,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Initialize the memory",
+        "end_column": 24,
+        "end_line": 344,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 344,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Allocate another block",
+        "end_column": 25,
+        "end_line": 355,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 355,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// No need to free individual allocations with this simple pool",
+        "end_column": 63,
+        "end_line": 368,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 368,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Just reset the entire pool when done",
+        "end_column": 39,
+        "end_line": 369,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 369,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// The memory for numbers and text is now available for reuse",
+        "end_column": 61,
+        "end_line": 373,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 373,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// but accessing them would be dangerous as the memory may be reused",
+        "end_column": 68,
+        "end_line": 374,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 374,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "/**\n * Demonstrate handling of multi-dimensional arrays with dynamic allocation\n */",
+        "end_column": 3,
+        "end_line": 379,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 377,
+        "type": "DOCSTRING"
+      },
+      {
+        "children": [],
+        "content": "// Method 1: Allocate a single block for 2D array",
+        "end_column": 49,
+        "end_line": 386,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 386,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Initialize and access using row-major indexing math",
+        "end_column": 54,
+        "end_line": 394,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 394,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Method 2: Array of pointers (jagged array)",
+        "end_column": 45,
+        "end_line": 404,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 404,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Allocate each row",
+        "end_column": 20,
+        "end_line": 413,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 413,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Clean up previously allocated rows",
+        "end_column": 37,
+        "end_line": 418,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 418,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Initialize and access using natural 2D indexing",
+        "end_column": 50,
+        "end_line": 429,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 429,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Clean up method 2 (must free each row)",
+        "end_column": 41,
+        "end_line": 439,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 439,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "content": "// Clean up method 1",
+        "end_column": 20,
+        "end_line": 445,
+        "name": "",
+        "qualified_name": "",
+        "start_column": 1,
+        "start_line": 445,
+        "type": "COMMENT"
+      },
+      {
+        "children": [],
+        "end_column": 1,
+        "end_line": 3979,
         "name": "main",
-        "type": "function_definition",
-        "parameters": [],
-        "return_type": "int",
-        "body_range": {
-          "start_line": 433,
-          "start_column": 0,
-          "end_line": 445,
-          "end_column": 1
-        }
+        "qualified_name": "main",
+        "start_column": 1,
+        "start_line": 3843,
+        "type": "FUNCTION"
       }
     ],
-    "includes": [
-      {"name": "stdio.h", "system": true, "line": 11},
-      {"name": "stdlib.h", "system": true, "line": 12},
-      {"name": "string.h", "system": true, "line": 13},
-      {"name": "assert.h", "system": true, "line": 14}
-    ],
-    "docstrings": [
+    "end_column": 1,
+    "end_line": 466,
+    "name": "dynamic_memory.c",
+    "qualified_name": "dynamic_memory.c",
+    "start_column": 1,
+    "start_line": 1,
+    "type": "ROOT"
+  },
+  "cst": {
+    "children": [
       {
-        "type": "file_docstring",
-        "text": "Demonstration of C Memory Management\n\nThis example covers:\n- Dynamic memory allocation (malloc, calloc, realloc, free)\n- Memory manipulation functions (memcpy, memmove, memset)\n- Pointer arithmetic\n- Memory safety considerations\n- Custom memory allocation patterns",
-        "range": {
-          "start_line": 1,
-          "start_column": 0,
-          "end_line": 9,
-          "end_column": 3
-        }
+        "children": [],
+        "end_column": 18,
+        "end_line": 12,
+        "start_column": 1,
+        "start_line": 12,
+        "text": "#include <stdio.h>",
+        "type": "include_directive"
+      },
+      {
+        "children": [],
+        "end_column": 19,
+        "end_line": 13,
+        "start_column": 1,
+        "start_line": 13,
+        "text": "#include <stdlib.h>",
+        "type": "include_directive"
+      },
+      {
+        "children": [],
+        "end_column": 19,
+        "end_line": 14,
+        "start_column": 1,
+        "start_line": 14,
+        "text": "#include <string.h>",
+        "type": "include_directive"
+      },
+      {
+        "children": [],
+        "end_column": 19,
+        "end_line": 15,
+        "start_column": 1,
+        "start_line": 15,
+        "text": "#include <assert.h>",
+        "type": "include_directive"
+      },
+      {
+        "children": [
+          {
+            "children": [],
+            "text": "printf(\"C Memory Management Demonstration\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "demonstrate_malloc();",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "demonstrate_calloc();",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "demonstrate_realloc();",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "demonstrate_pointer_arithmetic();",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "demonstrate_memory_functions();",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "demonstrate_memory_leaks();",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "demonstrate_memory_pool();",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "demonstrate_multidimensional_arrays();",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "printf(\"\\nAll demonstrations completed successfully\\n\");",
+            "type": "statement"
+          },
+          {
+            "children": [],
+            "text": "return 0;",
+            "type": "statement"
+          }
+        ],
+        "end_column": 1,
+        "end_line": 466,
+        "name": "main",
+        "start_column": 1,
+        "start_line": 452,
+        "text": "int main() {\n    printf(\"C Memory Management Demonstration\\n\");\n    \n    demonstrate_malloc();\n    demonstrate_calloc();\n    demonstrate_realloc();\n    demonstrate_pointer_arithmetic();\n    demonstrate_memory_functions();\n    demonstrate_memory_leaks();\n    demonstrate_memory_pool();\n    demonstrate_multidimensional_arrays();\n    \n    printf(\"\\nAll demonstrations completed successfully\\n\");\n    return 0;\n}",
+        "type": "function_definition"
+      },
+      {
+        "children": [],
+        "end_column": 3,
+        "end_line": 10,
+        "start_column": 1,
+        "start_line": 1,
+        "text": "/**\n * Demonstration of C Memory Management\n *\n * This example covers:\n * - Dynamic memory allocation (malloc, calloc, realloc, free)\n * - Memory manipulation functions (memcpy, memmove, memset)\n * - Pointer arithmetic\n * - Memory safety considerations\n * - Custom memory allocation patterns\n */",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 3,
+        "end_line": 19,
+        "start_column": 1,
+        "start_line": 17,
+        "text": "/**\n * Basic dynamic memory allocation with malloc\n */",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 33,
+        "end_line": 23,
+        "start_column": 1,
+        "start_line": 23,
+        "text": "// Allocate memory for 5 integers",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 37,
+        "end_line": 26,
+        "start_column": 1,
+        "start_line": 26,
+        "text": "// Check if allocation was successful",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 34,
+        "end_line": 32,
+        "start_column": 1,
+        "start_line": 32,
+        "text": "// Initialize the allocated memory",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 27,
+        "end_line": 37,
+        "start_column": 1,
+        "start_line": 37,
+        "text": "// Use the allocated memory",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 28,
+        "end_line": 44,
+        "start_column": 1,
+        "start_line": 44,
+        "text": "// Free the allocated memory",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 60,
+        "end_line": 48,
+        "start_column": 1,
+        "start_line": 48,
+        "text": "// Trying to use freed memory would cause undefined behavior",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 44,
+        "end_line": 49,
+        "start_column": 1,
+        "start_line": 49,
+        "text": "// numbers[0] = 100; // This would be a bug!",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 3,
+        "end_line": 54,
+        "start_column": 1,
+        "start_line": 52,
+        "text": "/**\n * Using calloc for zero-initialized memory\n */",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 53,
+        "end_line": 58,
+        "start_column": 1,
+        "start_line": 58,
+        "text": "// Allocate and zero-initialize memory for 5 integers",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 36,
+        "end_line": 66,
+        "start_column": 1,
+        "start_line": 66,
+        "text": "// calloc initializes memory to zero",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 25,
+        "end_line": 73,
+        "start_column": 1,
+        "start_line": 73,
+        "text": "// Now assign some values",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 28,
+        "end_line": 84,
+        "start_column": 1,
+        "start_line": 84,
+        "text": "// Free the allocated memory",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 3,
+        "end_line": 91,
+        "start_column": 1,
+        "start_line": 89,
+        "text": "/**\n * Using realloc to resize allocated memory\n */",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 27,
+        "end_line": 95,
+        "start_column": 1,
+        "start_line": 95,
+        "text": "// Start with a small array",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 23,
+        "end_line": 103,
+        "start_column": 1,
+        "start_line": 103,
+        "text": "// Initialize the array",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 38,
+        "end_line": 114,
+        "start_column": 1,
+        "start_line": 114,
+        "text": "// Resize the array to hold 5 integers",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 59,
+        "end_line": 123,
+        "start_column": 1,
+        "start_line": 123,
+        "text": "// The original data is preserved; realloc copied it for us",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 30,
+        "end_line": 126,
+        "start_column": 1,
+        "start_line": 126,
+        "text": "// Initialize the new elements",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 19,
+        "end_line": 136,
+        "start_column": 1,
+        "start_line": 136,
+        "text": "// Shrink the array",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 18,
+        "end_line": 153,
+        "start_column": 1,
+        "start_line": 153,
+        "text": "// Free the memory",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 3,
+        "end_line": 160,
+        "start_column": 1,
+        "start_line": 158,
+        "text": "/**\n * Demonstrate pointer arithmetic and memory access\n */",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 34,
+        "end_line": 164,
+        "start_column": 1,
+        "start_line": 164,
+        "text": "// Allocate an array of 5 integers",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 19,
+        "end_line": 172,
+        "start_column": 1,
+        "start_line": 172,
+        "text": "// Initialize array",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 23,
+        "end_line": 177,
+        "start_column": 1,
+        "start_line": 177,
+        "text": "// Basic array indexing",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 32,
+        "end_line": 180,
+        "start_column": 1,
+        "start_line": 180,
+        "text": "// Equivalent pointer arithmetic",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 79,
+        "end_line": 183,
+        "start_column": 1,
+        "start_line": 183,
+        "text": "// Moving the pointer (unsafe, must keep track of original pointer for freeing)",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 31,
+        "end_line": 187,
+        "start_column": 1,
+        "start_line": 187,
+        "text": "// Move pointer to next element",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 28,
+        "end_line": 191,
+        "start_column": 1,
+        "start_line": 191,
+        "text": "// Move pointer by an offset",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 30,
+        "end_line": 195,
+        "start_column": 1,
+        "start_line": 195,
+        "text": "// Difference between pointers",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 47,
+        "end_line": 200,
+        "start_column": 1,
+        "start_line": 200,
+        "text": "// Free the original pointer, not the moved one",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 3,
+        "end_line": 209,
+        "start_column": 1,
+        "start_line": 207,
+        "text": "/**\n * Demonstrate memory manipulation functions\n */",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 18,
+        "end_line": 213,
+        "start_column": 1,
+        "start_line": 213,
+        "text": "// Allocate memory",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 43,
+        "end_line": 224,
+        "start_column": 1,
+        "start_line": 224,
+        "text": "// memset: Fill memory with a specific byte",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 38,
+        "end_line": 229,
+        "start_column": 1,
+        "start_line": 229,
+        "text": "// memcpy: Copy non-overlapping memory",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 40,
+        "end_line": 234,
+        "start_column": 1,
+        "start_line": 234,
+        "text": "// memmove: Safe for overlapping regions",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 48,
+        "end_line": 238,
+        "start_column": 1,
+        "start_line": 238,
+        "text": "// Move \"defghi\" to position starting at \"bcdef\"",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 33,
+        "end_line": 242,
+        "start_column": 1,
+        "start_line": 242,
+        "text": "// memcmp: Compare memory regions",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 11,
+        "end_line": 253,
+        "start_column": 1,
+        "start_line": 253,
+        "text": "// Clean up",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 3,
+        "end_line": 262,
+        "start_column": 1,
+        "start_line": 260,
+        "text": "/**\n * Demonstrate a common pitfall: memory leaks\n */",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 18,
+        "end_line": 266,
+        "start_column": 1,
+        "start_line": 266,
+        "text": "// Allocate memory",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 47,
+        "end_line": 276,
+        "start_column": 1,
+        "start_line": 276,
+        "text": "// Example of code paths that might cause leaks",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 47,
+        "end_line": 284,
+        "start_column": 1,
+        "start_line": 284,
+        "text": "// Nested allocations make leak tracking harder",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 17,
+        "end_line": 295,
+        "start_column": 1,
+        "start_line": 295,
+        "text": "// Proper cleanup",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 3,
+        "end_line": 306,
+        "start_column": 1,
+        "start_line": 304,
+        "text": "/**\n * Demonstrate a simple custom memory pool\n */",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 24,
+        "end_line": 312,
+        "start_column": 1,
+        "start_line": 312,
+        "text": "// Simple bump allocator",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 32,
+        "end_line": 320,
+        "start_column": 1,
+        "start_line": 320,
+        "text": "// Ensure alignment (simplified)",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 32,
+        "end_line": 333,
+        "start_column": 1,
+        "start_line": 333,
+        "text": "// Reset the pool to start fresh",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 37,
+        "end_line": 336,
+        "start_column": 1,
+        "start_line": 336,
+        "text": "// Allocate some memory from the pool",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 24,
+        "end_line": 344,
+        "start_column": 1,
+        "start_line": 344,
+        "text": "// Initialize the memory",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 25,
+        "end_line": 355,
+        "start_column": 1,
+        "start_line": 355,
+        "text": "// Allocate another block",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 63,
+        "end_line": 368,
+        "start_column": 1,
+        "start_line": 368,
+        "text": "// No need to free individual allocations with this simple pool",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 39,
+        "end_line": 369,
+        "start_column": 1,
+        "start_line": 369,
+        "text": "// Just reset the entire pool when done",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 61,
+        "end_line": 373,
+        "start_column": 1,
+        "start_line": 373,
+        "text": "// The memory for numbers and text is now available for reuse",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 68,
+        "end_line": 374,
+        "start_column": 1,
+        "start_line": 374,
+        "text": "// but accessing them would be dangerous as the memory may be reused",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 3,
+        "end_line": 379,
+        "start_column": 1,
+        "start_line": 377,
+        "text": "/**\n * Demonstrate handling of multi-dimensional arrays with dynamic allocation\n */",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 49,
+        "end_line": 386,
+        "start_column": 1,
+        "start_line": 386,
+        "text": "// Method 1: Allocate a single block for 2D array",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 54,
+        "end_line": 394,
+        "start_column": 1,
+        "start_line": 394,
+        "text": "// Initialize and access using row-major indexing math",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 45,
+        "end_line": 404,
+        "start_column": 1,
+        "start_line": 404,
+        "text": "// Method 2: Array of pointers (jagged array)",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 20,
+        "end_line": 413,
+        "start_column": 1,
+        "start_line": 413,
+        "text": "// Allocate each row",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 37,
+        "end_line": 418,
+        "start_column": 1,
+        "start_line": 418,
+        "text": "// Clean up previously allocated rows",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 50,
+        "end_line": 429,
+        "start_column": 1,
+        "start_line": 429,
+        "text": "// Initialize and access using natural 2D indexing",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 41,
+        "end_line": 439,
+        "start_column": 1,
+        "start_line": 439,
+        "text": "// Clean up method 2 (must free each row)",
+        "type": "comment"
+      },
+      {
+        "children": [],
+        "end_column": 20,
+        "end_line": 445,
+        "start_column": 1,
+        "start_line": 445,
+        "text": "// Clean up method 1",
+        "type": "comment"
       }
     ],
-    "global_variables": [
-      {
-        "name": "memory_pool",
-        "type": "char[1024]",
-        "is_static": true,
-        "line": 297
-      },
-      {
-        "name": "pool_offset",
-        "type": "size_t",
-        "is_static": true,
-        "initial_value": "0",
-        "line": 298
-      }
-    ],
-    "macros": [
-      {
-        "name": "POOL_SIZE",
-        "value": "1024",
-        "line": 296
-      }
-    ],
-    "memory_functions": [
-      {
-        "name": "malloc",
-        "usage": [
-          {"line": 21, "size_expression": "5 * sizeof(int)"},
-          {"line": 90, "size_expression": "3 * sizeof(int)"},
-          {"line": 154, "size_expression": "5 * sizeof(int)"},
-          {"line": 201, "size_expression": "20"},
-          {"line": 202, "size_expression": "20"},
-          {"line": 255, "size_expression": "sizeof(int) * 10"},
-          {"line": 272, "size_expression": "sizeof(int) * 5"},
-          {"line": 367, "size_expression": "rows * cols * sizeof(int)"},
-          {"line": 379, "size_expression": "rows * sizeof(int*)"},
-          {"line": 392, "size_expression": "cols * sizeof(int)"}
-        ]
-      },
-      {
-        "name": "calloc",
-        "usage": [
-          {"line": 55, "count_expression": "5", "size_expression": "sizeof(int)"}
-        ]
-      },
-      {
-        "name": "realloc",
-        "usage": [
-          {"line": 107, "old_pointer": "numbers", "size_expression": "5 * sizeof(int)"},
-          {"line": 126, "old_pointer": "numbers", "size_expression": "2 * sizeof(int)"}
-        ]
-      },
-      {
-        "name": "free",
-        "usage": [
-          {"line": 42, "pointer": "numbers"},
-          {"line": 79, "pointer": "numbers"},
-          {"line": 143, "pointer": "numbers"},
-          {"line": 190, "pointer": "arr"},
-          {"line": 245, "pointer": "buffer1"},
-          {"line": 246, "pointer": "buffer2"},
-          {"line": 287, "pointer": "more_data"},
-          {"line": 288, "pointer": "data"},
-          {"line": 394, "pointer": "matrix2[j]"},
-          {"line": 397, "pointer": "matrix2"},
-          {"line": 398, "pointer": "matrix1"},
-          {"line": 421, "pointer": "matrix2[i]"},
-          {"line": 423, "pointer": "matrix2"},
-          {"line": 426, "pointer": "matrix1"}
-        ]
-      },
-      {
-        "name": "memset",
-        "usage": [
-          {"line": 208, "pointer": "buffer1", "value": "'A'", "size": "19"}
-        ]
-      },
-      {
-        "name": "memcpy",
-        "usage": [
-          {"line": 213, "destination": "buffer2", "source": "source", "size": "strlen(source) + 1"}
-        ]
-      },
-      {
-        "name": "memmove",
-        "usage": [
-          {"line": 219, "destination": "overlap + 1", "source": "overlap + 3", "size": "6"}
-        ]
-      },
-      {
-        "name": "memcmp",
-        "usage": [
-          {"line": 226, "pointer1": "str1", "pointer2": "str2", "size": "5"},
-          {"line": 227, "pointer1": "str1", "pointer2": "str3", "size": "5"}
-        ]
-      },
-      {
-        "name": "pool_alloc",
-        "usage": [
-          {"line": 324, "size_expression": "5 * sizeof(int)"},
-          {"line": 338, "size_expression": "20"}
-        ]
-      },
-      {
-        "name": "pool_reset",
-        "usage": [
-          {"line": 321},
-          {"line": 354}
-        ]
-      }
-    ],
-    "pointer_operations": [
-      {
-        "operation": "pointer_arithmetic",
-        "examples": [
-          {"line": 166, "expression": "arr[2]", "access_type": "array_indexing"},
-          {"line": 169, "expression": "*(arr + 2)", "access_type": "pointer_arithmetic"},
-          {"line": 172, "expression": "*ptr", "access_type": "pointer_dereference"},
-          {"line": 176, "expression": "ptr++", "access_type": "pointer_increment"},
-          {"line": 180, "expression": "ptr = arr + 3", "access_type": "pointer_offset"},
-          {"line": 185, "expression": "ptr2 - ptr", "access_type": "pointer_difference"}
-        ]
-      },
-      {
-        "operation": "null_checking",
-        "examples": [
-          {"line": 23, "expression": "if (numbers == NULL)"},
-          {"line": 57, "expression": "if (numbers == NULL)"},
-          {"line": 92, "expression": "if (numbers == NULL)"},
-          {"line": 108, "expression": "if (new_numbers == NULL)"},
-          {"line": 127, "expression": "if (new_numbers == NULL)"},
-          {"line": 156, "expression": "if (arr == NULL)"},
-          {"line": 204, "expression": "if (buffer1 == NULL || buffer2 == NULL)"},
-          {"line": 258, "expression": "if (data == NULL)"},
-          {"line": 275, "expression": "if (more_data == NULL)"},
-          {"line": 300, "expression": "if (pool_offset + size > POOL_SIZE)"},
-          {"line": 326, "expression": "if (numbers == NULL)"},
-          {"line": 340, "expression": "if (text == NULL)"},
-          {"line": 369, "expression": "if (matrix1 == NULL)"},
-          {"line": 381, "expression": "if (matrix2 == NULL)"},
-          {"line": 394, "expression": "if (matrix2[i] == NULL)"}
-        ]
-      },
-      {
-        "operation": "pointer_casting",
-        "examples": [
-          {"line": 21, "expression": "(int*)malloc(5 * sizeof(int))"},
-          {"line": 55, "expression": "(int*)calloc(5, sizeof(int))"},
-          {"line": 90, "expression": "(int*)malloc(3 * sizeof(int))"},
-          {"line": 107, "expression": "(int*)realloc(numbers, 5 * sizeof(int))"},
-          {"line": 126, "expression": "(int*)realloc(numbers, 2 * sizeof(int))"},
-          {"line": 154, "expression": "(int*)malloc(5 * sizeof(int))"},
-          {"line": 201, "expression": "(char*)malloc(20)"},
-          {"line": 202, "expression": "(char*)malloc(20)"},
-          {"line": 255, "expression": "(int*)malloc(sizeof(int) * 10)"},
-          {"line": 272, "expression": "(int*)malloc(sizeof(int) * 5)"},
-          {"line": 324, "expression": "(int*)pool_alloc(5 * sizeof(int))"},
-          {"line": 338, "expression": "(char*)pool_alloc(20)"},
-          {"line": 367, "expression": "(int*)malloc(rows * cols * sizeof(int))"},
-          {"line": 379, "expression": "(int**)malloc(rows * sizeof(int*))"},
-          {"line": 392, "expression": "(int*)malloc(cols * sizeof(int))"}
-        ]
-      },
-      {
-        "operation": "multidimensional_arrays",
-        "examples": [
-          {"line": 375, "expression": "matrix1[i * cols + j]", "access_type": "linear_indexing"},
-          {"line": 376, "expression": "matrix1[i * cols + j]", "access_type": "linear_indexing"},
-          {"line": 405, "expression": "matrix2[i][j]", "access_type": "2d_indexing"},
-          {"line": 406, "expression": "matrix2[i][j]", "access_type": "2d_indexing"}
-        ]
-      }
-    ],
-    "memory_safety_patterns": [
-      {
-        "pattern": "null_check_after_allocation",
-        "examples": [
-          {"line": 23, "code": "if (numbers == NULL) { ... return; }"},
-          {"line": 57, "code": "if (numbers == NULL) { ... return; }"},
-          {"line": 92, "code": "if (numbers == NULL) { ... return; }"}
-        ]
-      },
-      {
-        "pattern": "null_pointer_after_free",
-        "examples": [
-          {"line": 43, "code": "numbers = NULL;"},
-          {"line": 80, "code": "numbers = NULL;"},
-          {"line": 144, "code": "numbers = NULL;"},
-          {"line": 191, "code": "ptr = NULL;"},
-          {"line": 247, "code": "buffer1 = NULL;"},
-          {"line": 248, "code": "buffer2 = NULL;"},
-          {"line": 289, "code": "more_data = NULL;"},
-          {"line": 290, "code": "data = NULL;"},
-          {"line": 428, "code": "matrix1 = NULL;"},
-          {"line": 429, "code": "matrix2 = NULL;"}
-        ]
-      },
-      {
-        "pattern": "handle_realloc_failure",
-        "examples": [
-          {"line": 108, "code": "if (new_numbers == NULL) { ... free(numbers); return; }"},
-          {"line": 127, "code": "if (new_numbers == NULL) { ... free(numbers); return; }"}
-        ]
-      },
-      {
-        "pattern": "clean_up_on_error",
-        "examples": [
-          {"line": 204, "code": "if (buffer1 == NULL || buffer2 == NULL) { free(buffer1); free(buffer2); return; }"},
-          {"line": 275, "code": "if (more_data == NULL) { ... free(data); return; }"},
-          {"line": 393, "code": "if (matrix2[i] == NULL) { for (int j = 0; j < i; j++) { free(matrix2[j]); } free(matrix2); free(matrix1); ... return; }"}
-        ]
-      }
-    ],
-    "function_calls": [
-      {
-        "name": "demonstrate_malloc",
-        "arguments": [],
-        "line": 436
-      },
-      {
-        "name": "demonstrate_calloc",
-        "arguments": [],
-        "line": 437
-      },
-      {
-        "name": "demonstrate_realloc",
-        "arguments": [],
-        "line": 438
-      },
-      {
-        "name": "demonstrate_pointer_arithmetic",
-        "arguments": [],
-        "line": 439
-      },
-      {
-        "name": "demonstrate_memory_functions",
-        "arguments": [],
-        "line": 440
-      },
-      {
-        "name": "demonstrate_memory_leaks",
-        "arguments": [],
-        "line": 441
-      },
-      {
-        "name": "demonstrate_memory_pool",
-        "arguments": [],
-        "line": 442
-      },
-      {
-        "name": "demonstrate_multidimensional_arrays",
-        "arguments": [],
-        "line": 443
-      }
-    ]
-  }
+    "end_column": 1,
+    "end_line": 466,
+    "start_column": 1,
+    "start_line": 1,
+    "type": "translation_unit"
+  },
+  "language": "C"
 }
