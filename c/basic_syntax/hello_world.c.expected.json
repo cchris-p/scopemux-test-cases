@@ -1,4 +1,5 @@
 {
+  "language": "C",
   "ast": {
     "children": [],
     "docstring": null,
@@ -6,12 +7,17 @@
     "parameters": [],
     "path": null,
     "qualified_name": "hello_world.c",
-    "range": null,
-    "raw_content": null,
+    "range": {
+      "start_line": 0,
+      "start_column": 0,
+      "end_line": 0,
+      "end_column": 0
+    },
+    "raw_content": "",
     "return_type": null,
     "signature": null,
     "system": false,
-    "type": "UNKNOWN"
+    "type": "ROOT"
   },
   "cst": {
     "children": [
@@ -503,6 +509,5 @@
       }
     },
     "type": "translation_unit"
-  },
-  "language": null
+  }
 }
